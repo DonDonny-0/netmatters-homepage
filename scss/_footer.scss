@@ -1,5 +1,5 @@
 footer {
-  background-color: #323544;
+  background-color: $bkg-color-primary;
   color: white;
   padding: 30px 0 0;
   position: relative;
@@ -12,15 +12,15 @@ footer {
       flex: 100%;
       margin-bottom: 30px;
 
-      @media (min-width: 768px) {
+      @media (min-width: $bkpoint-sm) {
         flex: 50%;
       }
 
-      @media (min-width: 992px) {
+      @media (min-width: $bkpoint-md) {
         flex: 25%;
       }
 
-      @media (min-width: 1260px) {
+      @media (min-width: $bkpoint-lg) {
         margin-bottom: 40px;
       }
 
@@ -30,5 +30,26 @@ footer {
         margin-bottom: 26px;
       }
     }
+  }
+
+  .copyright {
+    display: block;
+    background-color: #212330;
+    padding: 10px 0 10px 15px;
+    line-height: 0.2em;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  li {
+    display: block;
+    text-align: left;
   }
 }
