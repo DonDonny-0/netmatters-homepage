@@ -1,4 +1,44 @@
 .about {
   background-color: $bkg-color-primary;
   color: white;
+  font-size: 1.2em;
+  line-height: 1.4;
+
+  .about-content {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $bkpoint-md) {
+      flex-direction: row;
+    }
+  }
+
+  button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: $bkg-color-secondary;
+    color: white;
+    border: 1px solid $bkg-color-secondary;
+    font-size: 1.1em;
+    text-transform: uppercase;
+  }
+
+  #g-reviews {
+    background-color: skyblue;
+  }
+
+  #t-reviews {
+    background-color: lightgreen;
+  }
+
+  button:hover {
+    background-color: green;
+  }
+
+  .arrow {
+    height: 20px;
+    display: inline-block;
+    margin-left: 8px;
+  }
 }
+

@@ -71,9 +71,9 @@ footer {
   }
 
   .socials-grid {
-    display: flex;
+    display: grid;
     grid-template-columns: 5em 5em 5em 5em;
-    
+    grid-gap: 2px;
 
     .social-icon {
       background-color: #212330;
