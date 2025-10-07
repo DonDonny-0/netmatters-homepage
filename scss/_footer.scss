@@ -7,10 +7,17 @@ footer {
   .footer-row {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 25px;
+
+    .menus {
+      flex-direction: row;
+      flex-grow: 1;
+      padding-bottom: 20px;
+    }
 
     .footer-menu {
       flex: 100%;
-      margin-bottom: 30px;
+      margin-bottom: 10px;
 
       @media (min-width: $bkpoint-sm) {
         flex: 50%;
@@ -33,10 +40,20 @@ footer {
   }
 
   .copyright {
-    display: block;
+    display: flex;
     background-color: #212330;
     padding: 10px 0 10px 15px;
     line-height: 0.2em;
+
+    .details {
+      display: flex;;
+
+      @media (max-width: $bkpoint-sm) {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
   }
 
   a {
@@ -54,8 +71,10 @@ footer {
   }
 
   .socials-grid {
-    display: grid;
+    display: flex;
     grid-template-columns: 5em 5em 5em 5em;
+    
+
     .social-icon {
       background-color: #212330;
       padding: 30px 20px 10px 20px;
@@ -63,6 +82,7 @@ footer {
   }
 
   p {
-    line-height: 0.2em;
+    line-height: 0.4em;
   }
+
 }
