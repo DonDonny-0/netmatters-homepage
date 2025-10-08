@@ -1,0 +1,19 @@
+.banner {
+  background-image: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url(../img/banner-pic-1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+
+  .banner-text {
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 100px;
+    font-size: 1.5em;
+
+    @media (min-width: $bkpoint-md) {
+      text-align: left;
+      font-size: 2em;
+    }
+  }
+}

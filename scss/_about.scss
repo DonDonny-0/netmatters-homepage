@@ -3,10 +3,21 @@
   color: white;
   font-size: 1.2em;
   line-height: 1.4;
+  margin: 0 0 50px;
+  padding: 20px 0;
 
   .about-content {
     display: flex;
     flex-direction: column;
+    padding: auto;
+
+    .content{
+      margin: 0 auto;
+    }
+
+    .star {
+      height: 50px;
+    }
 
     @media (min-width: $bkpoint-md) {
       flex-direction: row;
@@ -14,25 +25,36 @@
   }
 
   button {
-    padding: 10px 20px;
-    border-radius: 10px;
+    padding: 12px 20px;
+    margin-top: auto;
+    border-radius: 5px;
     background-color: $bkg-color-secondary;
     color: white;
     border: 1px solid $bkg-color-secondary;
-    font-size: 1.1em;
+    font-size: 1.05em;
     text-transform: uppercase;
   }
 
+  button:hover {
+    background-color: darken($color: $bkg-color-secondary, $amount: 20%);
+  }
+
   #g-reviews {
-    background-color: skyblue;
+    background-color: darken($color: cornflowerblue, $amount: 15%);
+    border: 1px solid darken($color: cornflowerblue, $amount: 15%);
+  }
+
+  #g-reviews:hover {
+    background-color: darken($color: cornflowerblue, $amount: 25%);
   }
 
   #t-reviews {
-    background-color: lightgreen;
+    background-color: mediumseagreen;
+    border: 1px solid mediumseagreen;
   }
 
-  button:hover {
-    background-color: green;
+  #t-reviews:hover {
+    background-color: darken($color: mediumseagreen, $amount: 10%);
   }
 
   .arrow {

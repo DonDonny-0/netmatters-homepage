@@ -1,0 +1,18 @@
+.partners {
+  padding: 50px 0 0;
+  overflow-x: auto;
+
+  .partners-row {
+    display: block;
+    text-wrap: nowrap;
+
+    .partner {
+      margin: 40px;
+      filter: grayscale(1);
+    }
+
+    .partner:hover {
+      filter: grayscale(0);
+    }
+  }
+}
