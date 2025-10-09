@@ -1,21 +1,13 @@
-@mixin btn-color {
-
-}
-
-@mixin bkg-color {
-  
-}
-
-@mixin mq-flex {
-  @media (min-width: $bkpoint-sm) {
-    flex: 50%
-  }
-
-  @media (min-width: $bkpoint-md) {
-    flex: 25%
-  }
-
-  @media (min-width: $bkpoint-lg) {
-    margin: 40px;
+@mixin btn($color) {
+  padding: 12px 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  background-color: $color;
+  border: 1px solid $color;
+  color: white;
+  font-size: 1.05em;
+  text-transform: uppercase;
+  &:hover {
+    background-color: darken($color: $color, $amount: 20%);
   }
 }

@@ -1,10 +1,87 @@
+@import 'utilities/mixins';
+
 .services {
+  color: black;
+
   .service-header {
     display: inline;
+  }
 
-    #view-work {
-      text-align: right;
-      margin-left: auto;
+  .service-grid-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    text-align: center;
+
+    @media (max-width: $bkpoint-md) {
+      grid-template-columns: 1fr;
+    }
+
+    .service-item {
+      border: 1px solid black;
+      border-radius: 10px;
+      padding: 30px;
+
+      #c-and-d {
+        display: inline-block;
+        @include btn(#F7B322);
+      }
+
+      #it-s {
+        display: inline-block;
+        @include btn(cornflowerblue);
+      }
+
+      #digital-m {
+        display: inline-block;
+        @include btn(mediumseagreen);
+      }
+    }
+  }
+
+  button {
+    @include btn(black);
+  }
+
+  .service-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    text-align: center;
+    margin-top: 30px;
+
+    @media (max-width: $bkpoint-lg) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: $bkpoint-sm) {
+      grid-template-columns: 1fr;
+    }
+
+    .service-item {
+      border: 1px solid black;
+      border-radius: 10px;
+      padding: 30px;
+
+      #telecoms {
+        display: inline-block;
+        @include btn(#D64541);
+      }
+
+      #web-dev {
+        display: inline-block;
+        @include btn(#926FB1);
+      }
+
+      #cyber-sec {
+        display: inline-block;
+        @include btn(#F62459);
+      }
+
+      #dev-course {
+        display: inline-block;
+        @include btn(#CE4125);
+      }
     }
   }
 }

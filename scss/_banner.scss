@@ -5,15 +5,26 @@
   height: 500px;
 
   .banner-text {
-    position: absolute;
+    position: relative;
     text-align: center;
     color: white;
-    top: 100px;
-    font-size: 1.5em;
+    font-size: 1.3em;
+    top:100px;
 
     @media (min-width: $bkpoint-md) {
+      top: 60px;
+      h1 {
+        font-size: 2.6em;
+        width: 80%;
+      }
       text-align: left;
-      font-size: 2em;
+      p {
+        width: 70%
+      }
     }
+  }
+
+  button{
+    @include btn(#926FB1);
   }
 }
