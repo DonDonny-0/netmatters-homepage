@@ -5,3 +5,17 @@
 @mixin bkg-color {
   
 }
+
+@mixin mq-flex {
+  @media (min-width: $bkpoint-sm) {
+    flex: 50%
+  }
+
+  @media (min-width: $bkpoint-md) {
+    flex: 25%
+  }
+
+  @media (min-width: $bkpoint-lg) {
+    margin: 40px;
+  }
+}
