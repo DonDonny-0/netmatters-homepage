@@ -24,23 +24,19 @@
 
       #c-and-d {
         display: inline-block;
-        @include btn(#F7B322);
+        @include btn($c-and-d-color);
       }
 
       #it-s {
         display: inline-block;
-        @include btn(cornflowerblue);
+        @include btn($it-color);
       }
 
       #digital-m {
         display: inline-block;
-        @include btn(mediumseagreen);
+        @include btn($dm-color);
       }
     }
-  }
-
-  button {
-    @include btn(black);
   }
 
   .service-grid-2 {
@@ -65,22 +61,22 @@
 
       #telecoms {
         display: inline-block;
-        @include btn(#D64541);
+        @include btn($ts-color);
       }
 
       #web-dev {
         display: inline-block;
-        @include btn(#926FB1);
+        @include btn($web-dev-color);
       }
 
       #cyber-sec {
         display: inline-block;
-        @include btn(#F62459);
+        @include btn($cyber-sec-color);
       }
 
       #dev-course {
         display: inline-block;
-        @include btn(#CE4125);
+        @include btn($dev-course-color);
       }
     }
   }
