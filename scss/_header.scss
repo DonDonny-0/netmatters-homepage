@@ -1,0 +1,76 @@
+.header-bar {
+  padding: 20px 0;
+  .header-items {
+    display: flex;
+    flex-grow: 1;
+
+    @media (max-width: $bkpoint-sm) {
+      flex-direction: column;
+    }
+    
+    justify-content:space-around;
+
+    .header-right {
+
+      #support-btn {
+        @include btn($it-color);
+        padding: 15px 15px;
+        margin: 5px 10px;
+        font-size: 1.5em;
+        border-radius: 2px;
+        height: 80%;
+
+        @media (max-width: $bkpoint-md) {
+          display: none;
+        }
+      }
+
+      #contact-btn {
+        @include btn(#999AA2);
+        padding: 15px 15px;
+        margin: 0 10px;
+        font-size: 1.5em;
+        border-radius: 2px;
+        height: 80%;
+
+
+        @media (max-width: $bkpoint-md) {
+          display: none;
+        }
+      }
+
+      #search-btn {
+        @include btn(#999AA2);
+        padding: 15px 15px;
+        font-size: 1.5em;
+        border-radius: 2px;
+        margin: 0;
+
+        @media (max-width: $bkpoint-lg) {
+          margin: 0 10px;
+        }
+      }
+
+      #hamburger {
+        @include btn(#333645);
+        padding: 15px 15px;
+        font-size: 1.5em;
+        border-radius: 2px;
+        margin: 0 10px;
+      }
+
+      form {
+        display: inline-flex;
+        height: 80%;
+      }
+
+      input[type="text"] {
+        margin: 0;
+
+        @media (min-width: $bkpoint-md) and (max-width: $bkpoint-lg) {
+          display: none;
+        }
+      } 
+    } 
+  }
+}
