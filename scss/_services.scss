@@ -5,78 +5,65 @@
 
   .service-header {
     display: inline;
-  }
 
-  .service-grid-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 30px;
-    text-align: center;
-
-    @media (max-width: $bkpoint-md) {
-      grid-template-columns: 1fr;
+    h1 {
+      font-weight: lighter;
     }
 
-    .service-item {
-      border: 1px solid black;
-      border-radius: 10px;
-      padding: 30px;
-
-      #c-and-d {
-        display: inline-block;
-        @include btn($c-and-d-color);
-      }
-
-      #it-s {
-        display: inline-block;
-        @include btn($it-color);
-      }
-
-      #digital-m {
-        display: inline-block;
-        @include btn($dm-color);
-      }
+    #view-work {
+      float: right;
+      margin: auto 0;
     }
   }
 
-  .service-grid-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 30px;
-    text-align: center;
-    margin-top: 30px;
+  .service-grid {
+    margin-top: 50px;
 
-    @media (max-width: $bkpoint-lg) {
-      grid-template-columns: 1fr 1fr;
+    .service-grid-1 {
+      @include service-grid(1fr 1fr 1fr);
+
+      @media (max-width: $bkpoint-md) {
+        grid-template-columns: 1fr;
+      }
+
+      #cd-service {
+        @include service-item($c-and-d-color);
+      }
+
+      #it-service {
+        @include service-item($it-color);
+      }
+
+      #dm-service {
+        @include service-item($dm-color);
+      }
     }
 
-    @media (max-width: $bkpoint-sm) {
-      grid-template-columns: 1fr;
-    }
+    .service-grid-2 {
+      @include service-grid(1fr 1fr 1fr 1fr);
 
-    .service-item {
-      border: 1px solid black;
-      border-radius: 10px;
-      padding: 30px;
-
-      #telecoms {
-        display: inline-block;
-        @include btn($ts-color);
+      @media (max-width: $bkpoint-lg) {
+        grid-template-columns: 1fr 1fr;
       }
 
-      #web-dev {
-        display: inline-block;
-        @include btn($web-dev-color);
+      @media (max-width: $bkpoint-sm) {
+        grid-template-columns: 1fr;
       }
 
-      #cyber-sec {
-        display: inline-block;
-        @include btn($cyber-sec-color);
+      #ts-service {
+        @include service-item($ts-color);
       }
 
-      #dev-course {
-        display: inline-block;
-        @include btn($dev-course-color);
+      #wd-service {
+        @include service-item($web-dev-color);
+      }
+
+      #cs-service {
+        @include service-item($cyber-sec-color);
+      }
+
+      #dev-service {
+        @include service-item($dev-course-color);
       }
     }
   }

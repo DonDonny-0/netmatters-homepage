@@ -7,7 +7,42 @@
   color: white;
   font-size: 1.05em;
   text-transform: uppercase;
+  @content;
   &:hover {
     background-color: darken($color: $color, $amount: 20%);
   }
+}
+
+@mixin service-item($color) {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 3px 35px rgba(0,0,0, .1);
+  border: 1px solid rgba(0,0,0, .2);
+  border-radius: 10px;
+  padding: 30px;
+  transition: background-color 0.5s, transform 0.5s;
+  &>button {
+    @include btn($color) {
+      margin: auto auto 0;
+    }
+  }
+  &:hover {
+    background-color: $color;
+    color: white;
+    transform: translate(0, -10px);
+
+    &>button {
+      background-color: white;
+      border-color: white;
+      color: $color;
+    }
+  }
+}
+
+@mixin service-grid($rows) {
+  display: grid;
+  grid-template-columns: $rows;
+  grid-gap: 30px;
+  text-align: center;
+  margin-top: 30px;
 }
