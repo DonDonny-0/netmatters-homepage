@@ -1,4 +1,22 @@
 .news {
+  @include view-link-bottom;
+  
+  .news-head {
+    @include view-link;
+    h1 {
+      margin-top: 10px;
+      font-size: 1.9em;
+      font-weight: bold;
+    }
+
+    h2 {
+      margin-top: 20px;
+      display: inline-block;
+      font-size: 2.5em;
+      font-weight:bold;
+      color: #333645;
+    }
+  }
 
   .articles {
     display: flex;
@@ -38,16 +56,10 @@
     }
 
     .article-details {
+
       padding-bottom: 50px;
       margin-left: 30px;
       margin-right: 60px;
-
-      .read-more {
-        display: inline-block;
-        padding: 10px;
-        border: 1px solid black;
-        margin: 10px 0;
-      }
     }
 
     .author {

@@ -1,24 +1,23 @@
 @import 'utilities/mixins';
 
 .services {
+  @include view-link-bottom;
   color: black;
 
   .service-header {
-    display: inline;
+    @include view-link;
+    
 
-    h1 {
+    h2 {
+      margin-top: 50px;
+      display: inline-block;
+      font-size: 3em;
       font-weight: lighter;
-    }
-
-    #view-work {
-      float: right;
-      margin: auto 0;
+      color: $heading-color;
     }
   }
 
   .service-grid {
-    margin-top: 50px;
-
     .service-grid-1 {
       @include service-grid(1fr 1fr 1fr);
 

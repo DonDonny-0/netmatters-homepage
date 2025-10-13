@@ -29,89 +29,34 @@
     }
 
     #c-and-d-nav {
-      div {
-        display: none;
-      }
-      &:hover {
-        background-color: $c-and-d-color;
-
-        div {
-          display:block;
-        }
-      }
+      @include nav-submenu($c-and-d-color);
     }
 
     #it-nav {
-      div {
-        display: none;
-      }
-      &:hover {
-        background-color: $it-color;
-        div {
-          display:block;
-        }
-      }
+      @include nav-submenu($it-color);
     }
 
     #dm-nav {
-      div {
-        display: none;
-      }
-      &:hover {
-        background-color: $dm-color;
-        div {
-          display:block;
-        }
-      }
+      @include nav-submenu($dm-color);
     }
 
     #ts-nav {
-      div {
-        display: none;
-      }
-      &:hover {
-        background-color: $ts-color;
-        div {
-          display:block;
-        }
-      }
+      @include nav-submenu($ts-color);
     }
 
     #web-dev-nav {
-      div {
-        display: none;
-      }
-      &:hover {
-        background-color: $web-dev-color;
-        div {
-          display:block;
-        }
-      }
+      @include nav-submenu($web-dev-color);
     }
 
     #cyber-sec-nav {
-      div {
-        display: none;
-      }
-      &:hover {
-        background-color: $cyber-sec-color;
-        div {
-          display:block;
-        }
-      }
+      @include nav-submenu($cyber-sec-color);
     }
 
     #dev-course-nav {
-      div {
-        display: none;
-      }
-      &:hover {
-        background-color: $dev-course-color;
-        div {
-          display:block;
-        }
-      }
+      @include nav-submenu($dev-course-color);
     }
   }
-
 }
+
+
+
