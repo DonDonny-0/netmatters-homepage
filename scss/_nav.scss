@@ -17,14 +17,24 @@
       list-style-type: none;
       padding: 25px 10px;
       flex-grow: 1;
+      width: 14.28571%;
 
-      @media (max-width: $bkpoint-md) {
-        display: none;
+      h1 {
+        text-wrap: nowrap;
+        font-weight: 550;
+        margin: -5px 0;
+      }
+
+      h2 {
+        margin: -5px;
+        font-weight: lighter;
       }
 
       a {
         color: white;
         text-decoration: none;
+        font-size: 1.1em;
+        font-weight: lighter;
       }
     }
 
@@ -55,6 +65,10 @@
     #dev-course-nav {
       @include nav-submenu($dev-course-color);
     }
+  }
+
+  @media (max-width: $bkpoint-md) {
+    display: none;
   }
 }
 

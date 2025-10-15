@@ -3,22 +3,32 @@
   .header-items {
     display: flex;
     flex-grow: 1;
+    flex-wrap: nowrap;
 
-    @media (max-width: $bkpoint-sm) {
-      flex-direction: column;
+    .header-left {
+      @media (max-width: $bkpoint-sm) {
+        flex-direction: column;
+      }
+      
+      justify-content:space-around;
+
+      img {
+        width:100%;
+
+        @media (max-width: $bkpoint-sm) {
+          width: 40%;
+        }
+      }
     }
-    
-    justify-content:space-around;
 
     .header-right {
-
       #support-btn {
         @include btn($it-color);
-        padding: 15px 15px;
-        margin: 5px 10px;
-        font-size: 1.5em;
+        padding: 4px 10px;
+        margin: 0 10px;
+        font-size: 1.25em;
         border-radius: 2px;
-        height: 80%;
+        height: 90%;
 
         @media (max-width: $bkpoint-md) {
           display: none;
@@ -27,11 +37,11 @@
 
       #contact-btn {
         @include btn(#999AA2);
-        padding: 15px 15px;
+        padding: 4px 10px;        
         margin: 0 10px;
-        font-size: 1.5em;
+        font-size: 1.15em;
         border-radius: 2px;
-        height: 80%;
+        height: 90%;
 
 
         @media (max-width: $bkpoint-md) {
@@ -41,36 +51,61 @@
 
       #search-btn {
         @include btn(#999AA2);
-        padding: 15px 15px;
+        padding: 17px 17px;
         font-size: 1.5em;
-        border-radius: 2px;
-        margin: 0;
+        border-radius: 0 2px 2px 0;
+        margin-top: 10px;
 
         @media (max-width: $bkpoint-lg) {
+          border-radius: 2px;
           margin: 0 10px;
+          height: 80%;
+        }
+
+        @media (max-width: $bkpoint-md) {
+          margin: 0;
+          border-radius: 0 2px 2px 0;
         }
       }
 
       #hamburger {
         @include btn(#333645);
+        display: inline-block;
         padding: 15px 15px;
         font-size: 1.5em;
         border-radius: 2px;
         margin: 0 10px;
+
+        @media (max-width: $bkpoint-sm) {
+          float: right;
+        }
       }
 
       form {
         display: inline-flex;
-        height: 80%;
-      }
 
-      input[type="text"] {
-        margin: 0;
+        #search-box {
 
-        @media (min-width: $bkpoint-md) and (max-width: $bkpoint-lg) {
-          display: none;
+          display: inline-block;
+          font-size: 14px;
+          margin: 0;
+          padding: 5px 15px;
+          border: 1px solid #ccc;
+          width: 240px;
+
+          @media (min-width: $bkpoint-md) and (max-width: $bkpoint-lg) {
+            display: none;
+          }
+
+          @media (max-width: $bkpoint-md) {
+            width: 180px;
+          }
         }
-      } 
-    } 
+      }
+    }
+  }
+
+  @media (max-width: $bkpoint-md) {
+    margin-bottom: -28px;
   }
 }

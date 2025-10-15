@@ -21,6 +21,20 @@
   border-radius: 10px;
   padding: 30px;
   transition: background-color 0.5s, transform 0.5s;
+
+  .icon {
+    height: 65px;
+    width: 65px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: $color;
+
+    i {
+      margin-top: 17px;
+      color: white;
+      font-size: 30px;
+    }
+  }
   &>button {
     @include btn($color) {
       margin: auto auto 0;
@@ -36,6 +50,16 @@
       border-color: white;
       color: $color;
     }
+
+    .icon {
+      background-color: white;
+
+      i {
+        margin-top: 15px;
+        color: $color;
+        font-size: 30px;
+      }
+    }
   }
 }
 
@@ -48,6 +72,17 @@
 }
 
 @mixin nav-submenu($color) {
+
+  i {
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: $color;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
   div {
     background-color: $color;
     display: none;
@@ -58,7 +93,6 @@
     z-index: 1;
     width: 100%;
     text-align: left;
-    line-height: 0.1em;
 
     @media (min-width: $bkpoint-lg) {
       top: 19%;
@@ -66,19 +100,28 @@
 
     li {
       width: 33%;
-
+      margin: -5px 0;
+      font-weight: bold;
       a {
+        display: flex;
         text-decoration: none;
+        i {
+          margin-right: 10px;
+        }
       }
     }
   }
   &:hover {
     background-color: $color;
 
+    i {
+      color: white;
+    }
+
     div {
       display:block;
 
-      li>a:hover {
+      li>h2:hover {
         text-decoration: underline;
       }
     }

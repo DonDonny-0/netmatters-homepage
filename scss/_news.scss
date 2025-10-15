@@ -25,6 +25,10 @@
     background-color: white;
     width: 100%;
 
+    div {
+      margin: 0;
+    }
+
     #article-3 {
       @media (min-width: $bkpoint-sm) and (max-width: $bkpoint-lg) {
         display: none;
@@ -36,10 +40,26 @@
       height: 100%;
       flex: 100%;
       box-shadow: 0 3px 35px rgba(0,0,0, .1);
-      margin-bottom: 30px;
+      border: 1px solid rgba(0,0,0, .2);
+      margin: 0 0 30px;
+      transition: transform 0.5s;
+
+      &:hover {
+        transform: translate(0, -10px);
+        cursor: pointer;
+      }
 
       img {
         width: 100%;
+      }
+
+      .read-more {
+        @include btn($c-and-d-color);
+        display: inline-block;
+        border-radius: 2px;
+        &:hover {
+          background-color: $c-and-d-color;
+        } 
       }
       
       @media (min-width: $bkpoint-sm) {
@@ -51,7 +71,8 @@
       }
 
       @media (min-width: $bkpoint-lg) {
-        margin: 40px;
+        margin: 0 15px;
+        height: 100%;
       }
     }
 
@@ -64,7 +85,7 @@
 
     .author {
       padding-top: 25px;
-      border-top: solid 1px black;
+      border-top: solid 1px rgba(0,0,0, .2);
       margin-top: 25px;
       display: flex;
       img {
