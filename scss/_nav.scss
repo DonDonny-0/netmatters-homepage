@@ -9,13 +9,31 @@
     justify-content: center;
     padding: 0;
     margin: 0;
+    z-index: 10;
+
+    a {
+      color: white;
+      z-index: 10;
+    }
+
+    #main-nav {
+      display: block;
+      text-decoration: none;
+      font-size: 1.125rem;
+      line-height: 1;
+      text-transform: uppercase;
+
+      small {
+        font-size: .625rem;
+      }
+    }
 
     li {
       margin: 0;
       padding: 0;
       display: inline-block;
       list-style-type: none;
-      padding: 25px 10px;
+      padding: 18px 10px;
       flex-grow: 1;
       width: 14.28571%;
 
@@ -27,13 +45,6 @@
 
       h2 {
         margin: -5px;
-        font-weight: lighter;
-      }
-
-      a {
-        color: white;
-        text-decoration: none;
-        font-size: 1.1em;
         font-weight: lighter;
       }
     }

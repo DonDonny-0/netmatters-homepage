@@ -18,17 +18,27 @@ footer {
     .footer-menu {
       flex: 100%;
       margin-bottom: 10px;
+      line-height: 0.7rem;
 
       @media (min-width: $bkpoint-sm) {
         flex: 50%;
+        p {
+          line-height: 0.8rem;
+        }
       }
 
       @media (min-width: $bkpoint-md) {
         flex: 25%;
+        p {
+          line-height: 0.8rem;
+        }
       }
 
       @media (min-width: $bkpoint-lg) {
         margin-bottom: 40px;
+        p {
+          line-height: 1.2rem;
+        }
       }
 
       h4 {

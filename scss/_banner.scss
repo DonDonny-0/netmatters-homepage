@@ -1,15 +1,26 @@
 .banner {
-  background-image: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url(../img/banner-pic-1.jpg);
+  background-image: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url(../img/home-YLei.webp);
   background-size: cover;
   background-position: center;
-  height: 500px;
+  height: 550px;
 
   .banner-text {
     position: relative;
     text-align: center;
     color: white;
-    font-size: 1.3em;
     top:100px;
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 3rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+      font-weight: 400;
+      line-height: 1.75rem;
+    }
     
     i {
       margin-left: 5px;
@@ -19,18 +30,28 @@
     @media (min-width: $bkpoint-md) {
       top: 60px;
       h1 {
-        font-size: 2.6em;
+        font-size: 4rem;
+        line-height: 5rem;
         width: 80%;
         margin: 0;
       }
       text-align: left;
       p {
-        width: 70%
+        width: 70%;
+        font-size: 1.625rem;
+        line-height: 2.5rem;
       }
     }
   }
 
   button{
     @include btn(#926FB1);
+    font-size: 1.25rem;
+
+    a>i {
+      margin-left: 12px;
+    }
+    padding: 5px 20px;
+    line-height: 50px;
   }
 }

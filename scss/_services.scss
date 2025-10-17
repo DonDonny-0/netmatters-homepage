@@ -16,9 +16,13 @@
     h2 {
       margin-top: 50px;
       display: inline-block;
-      font-size: 3em;
-      font-weight: lighter;
+      font-size: 2.7rem;
       color: $heading-color;
+      font-weight: 400;
+    }
+
+    h1{
+      font-size: 2.25rem;
     }
   }
 
