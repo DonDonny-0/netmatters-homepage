@@ -20,15 +20,22 @@
               <img src="img/f-logo.webp" alt="">
             </div>
             <div class="header-right">
-              <button id="support-btn"><i class="fa-solid fa-computer-mouse"></i>support</button>
-              <button id="contact-btn"><i class="fa-solid fa-paper-plane"></i>Contact</button>
-              <form action="">
+              <button id="support-btn"><a href="#"><i class="fa-solid fa-computer-mouse"></i>support</a></button>
+              <button id="contact-btn"><a href="#"><i class="fa-solid fa-paper-plane"></i>Contact</a></button>
+              <form action="#">
                 <input type="text" id="search-box" name="search" placeholder="Search..." value>
                 <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
-                <button id="hamburger"><i class="fa-solid fa-bars"></i></button>
               </form>
+              <button id="contact-sm">
+                <i class="fa-solid fa-phone-volume"></i>
+              </button>
+              <button id="hamburger"><i class="fa-solid fa-bars"></i></button>
             </div>
           </div>
+          <form action="#" class="search-sm">
+            <input type="text" id="search-box-sm" name="search-sm" placeholder="Search..." value>
+            <button id="search-btn-sm"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
         </div>
       </div>
     </header>
@@ -59,11 +66,11 @@
           </li>
           <li id="it-nav">
             <i class="fa-solid fa-display"></i><br>
-            <small>IT</small><br>Support
+            <a href="#"><small>IT</small><br>Support</a>
             <div>
               <ul class="container">
                 <li><h1>Our IT Support Services</h1></li><br>
-                <li><h2><a href="#"><i class="fa-regular fa-headphones"></i>Managed IT Support</a></h2></li>
+                <li><i class="fa-regular fa-headphones"></i><h2><a href="#">Managed IT Support</a></h2></li>
                 <li><h2><a href="#"><i class="fa-solid fa-briefcase"></i>Business IT Support</a></h2></li>
                 <li><h2><a href="#"><a href="#"><i class="fa-solid fa-laptop"></i>Office 365 for Business</a></h2></li>
                 <li><h2><a href="#"><i class="fa-solid fa-graduation-cap"></i>IT Consultancy</a></h2></li>
@@ -74,7 +81,7 @@
           </li>
           <li id="dm-nav">
             <i class="fa-solid fa-chart-simple"></i><br>
-            <small>Digital</small><br>Marketing
+            <a href="#"><small>Digital</small><br>Marketing</a>
             <div>
               <ul class="container">
                 <li><h1>Our Digital Marketing Services</h1></li><br>
@@ -89,7 +96,7 @@
           </li>
           <li id="ts-nav">
             <i class="fa-solid fa-phone-volume"></i><br>
-            <small>Telecoms</small><br> Services
+            <a href="#"><small>Telecoms</small><br> Services</a>
             <div>
               <ul class="container">
                 <li><h1>Our Telecoms Services</h1></li><br>
@@ -104,7 +111,7 @@
           </li>
           <li id="web-dev-nav">
             <i class="fa-solid fa-code"></i><br>
-            <small>Web</small><br> Design
+            <a href="#"><small>Web</small><br> Design</a>
             <div>
               <ul class="container">
                 <li><h1>Our Web Design Services</h1></li><br>
@@ -119,7 +126,7 @@
           </li>
           <li id="cyber-sec-nav">
             <i class="fa-solid fa-shield-halved"></i><br>
-            <small>Cyber</small><br> Security
+            <a href="#"><small>Cyber</small><br> Security</a>
             <div>
               <ul class="container">
                 <li><h1>Our Cyber Security Services</h1></li><br>
@@ -133,7 +140,8 @@
             </div>
           </li>
           <li id="dev-course-nav">
-            <i class="fa-solid fa-graduation-cap"></i><br><small>Developer</small><br> Course
+            <i class="fa-solid fa-graduation-cap"></i><br>
+            <a href="#"><small>Developer</small><br> Course</a>
             <div>
               <ul class="container">
                 <li><h1>Our Developer Course Services</h1></li><br>
@@ -152,7 +160,7 @@
         <div class="banner-text container">
           <h1>The East Of England's Leading Technology Company</h1>
           <p><strong>Performance-driven digital and technology services with complete transparency</strong></p>
-          <button>Why Choose Us?<img class="arrow" src="img/arrow-right2.png"></button>
+          <button><a href="#">Why Choose Us?<i class="fa-solid fa-arrow-right"></i></a></button>
         </div>
       </div>
     </div>
@@ -162,69 +170,85 @@
         <div class="container">
           <div class="service-header clearfix">
             <h2>Our Services</h1>
-            <h1><a href="#">View Our Work<img class="arrow" src="img/arrow-right-black.png"></a></h1>
+            <h1><a href="#">View Our Work<i class="fa-solid fa-arrow-right"></i></a></h1>
           </div>
           <div class="service-grid">
             <div class="service-grid-1">
-              <div id="cd-service">
-                <span class="icon">
-                  <i class="fa-solid fa-user-gear"></i>
-                </span>
-                <h2>Consultancy & Development</h2>
-                <p>Bespoke software solutions & consultancy for all your business needs including integrations and reporting.</p>
-                <button>Read More</button>
-              </div>
-              <div id="it-service">
-                <span class="icon">
-                  <i class="fa-solid fa-display"></i>
-                </span>
-                <h2>IT Support</h2>
-                <p>Fully managed IT support and consultancy packages tailored to meet your exact business needs.</p>
-                <button>Read More</button>
-              </div>
-              <div id="dm-service">
-                <span class="icon">
-                  <i class="fa-solid fa-chart-simple"></i>
-                </span>
-                <h2>Digital Marketing</h2>
-                <p>Driven brand awareness & ROI through creative digital marketing campaigns.</p>
-                <button>Read More</button>
-              </div>
+              <a href="#">
+                <div id="cd-service">
+                  <span class="icon">
+                    <i class="fa-solid fa-user-gear"></i>
+                  </span>
+                  <h2>Consultancy & Development</h2>
+                  <p>Bespoke software solutions & consultancy for all your business needs including integrations and reporting.</p>
+                  <button>Read More</button>
+                </div>
+              </a>
+              <a href="#">
+                <div id="it-service">
+                  <span class="icon">
+                    <i class="fa-solid fa-display"></i>
+                  </span>
+                  <h2>IT Support</h2>
+                  <p>Fully managed IT support and consultancy packages tailored to meet your exact business needs.</p>
+                  <button>Read More</button>
+                </div>
+              </a>
+              <a href="#">
+                <div id="dm-service">
+                  <span class="icon">
+                    <i class="fa-solid fa-chart-simple"></i>
+                  </span>
+                  <h2>Digital Marketing</h2>
+                  <p>Driven brand awareness & ROI through creative digital marketing campaigns.</p>
+                  <button>Read More</button>
+                </div>
+              </a>
             </div>
             <div class="service-grid-2">
-              <div id="ts-service">
-                <span class="icon">
-                  <i class="fa-solid fa-phone-volume"></i>
-                </span>
-                <h2>Telecoms Services</h2>
-                <p>Business telephony solutions including mobile & connectivity solutions.</p>
-                <button id="telecoms">Read More</button>
-              </div>
-              <div id="wd-service">
-                <span class="icon">
-                  <i class="fa-solid fa-code"></i>
-                </span>
-                <h2>Web Design</h2>
-                <p>User-centric design for businesses looking to make a lasting impression.</p>
-                <button id="web-dev">Read More</button>
-              </div>
-              <div id="cs-service"><span class="icon">
-                  <i class="fa-solid fa-shield-halved"></i>
-                </span>
-                <h2>Cyber Security</h2>
-                <p>Prevention, testing, consultancy & breach management services.</p>
-                <button id="cyber-sec">Read More</button>
-              </div>
-              <div id="dev-service"><span class="icon">
-                  <i class="fa-solid fa-graduation-cap"></i>
-                </span>
-                <h2>Developer Course</h2>
-                <p>Web design & software training courses designed to secure a job in tech.</p>
-                <button id="dev-course">Read More</button>
-              </div>
+              <a href="#">
+                <div id="ts-service">
+                  <span class="icon">
+                    <i class="fa-solid fa-phone-volume"></i>
+                  </span>
+                  <h2>Telecoms Services</h2>
+                  <p>Business telephony solutions including mobile & connectivity solutions.</p>
+                  <button id="telecoms">Read More</button>
+                </div>
+              </a>
+              <a href="#">
+                <div id="wd-service">
+                  <span class="icon">
+                    <i class="fa-solid fa-code"></i>
+                  </span>
+                  <h2>Web Design</h2>
+                  <p>User-centric design for businesses looking to make a lasting impression.</p>
+                  <button id="web-dev">Read More</button>
+                </div>
+              </a>
+              <a href="#">
+                <div id="cs-service">
+                  <span class="icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                  </span>
+                  <h2>Cyber Security</h2>
+                  <p>Prevention, testing, consultancy & breach management services.</p>
+                  <button id="cyber-sec">Read More</button>
+                </div>
+              </a>
+              <a href="#">
+                <div id="dev-service">
+                  <span class="icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                  </span>
+                  <h2>Developer Course</h2>
+                  <p>Web design & software training courses designed to secure a job in tech.</p>
+                  <button id="dev-course">Read More</button>
+                </div>
+              </a>
             </div>
           </div>
-          <h1><a href="#">View Our Work<img class="arrow" src="img/arrow-right-black.png"></a></h1>
+          <h1><a href="#">View Our Work<i class="fa-solid fa-arrow-right"></i></a></h1>
         </div>
       </div>
       <div class="partners">
@@ -254,8 +278,8 @@
                 <p>We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.</p>
               </div>
               <div class="btn-layout">
-                <button>Why Choose us?<img class="arrow" src="img/arrow-right2.png"></button>
-                <button>Our Culture<img class="arrow" src="img/arrow-right2.png"></button>
+                <button><a href="#">Why Choose us?<i class="fa-solid fa-arrow-right"></i></a></button>
+                <button><a href="#">Our Culture<i class="fa-solid fa-arrow-right"></i></a></button>
               </div>
             </div>
             <div class="about-section-2 content">
@@ -272,8 +296,8 @@
                 <p>Eleanor bishop, Head of Marketing - <strong>Ashcroft Partnership LLP</strong></p>
               </div>
               <div id="google-trust" class="btn-layout">
-                <button id="g-reviews">Google Reviews<img class="arrow" src="img/arrow-right2.png"></button>
-                <button id="t-reviews">Trustpilot Reviews<img class="arrow" src="img/arrow-right2.png"></button>
+                <button id="g-reviews"><a href="#">Google Reviews<i class="fa-solid fa-arrow-right"></i></a></button>
+                <button id="t-reviews"><a href="#">Trustpilot Reviews<i class="fa-solid fa-arrow-right"></i></a></button>
               </div>
             </div>       
           </div>
@@ -283,7 +307,7 @@
         <div class="container">
           <div class="news-head">
             <h2>Latest News</h1>
-            <h1><a href="#">View All<img class="arrow" src="img/arrow-right-black.png"></a>
+            <h1><a href="#">View All</a><i class="fa-solid fa-arrow-right"></i></h1>
           </div>
           <div class="articles">
             <div class="article">
@@ -332,7 +356,7 @@
               </div>
             </div>
           </div>
-          <h1><a href="#">View Our Work<img class="arrow" src="img/arrow-right-black.png"></a></h1>
+          <h1><a href="#">View Our Work</a><i class="fa-solid fa-arrow-right"></i></h1>
         </div>
       </div>
     </main>
@@ -360,10 +384,10 @@
             <img src="img/nm-logo-white-med.webp" alt="netmatters logo" />
             <h4>Follow Us On:</h4>
             <div class="socials-grid">
-              <a href="#"><span class="social-icon"><img src="img/facebook.png" alt="facebook logo" /></span></a>
-              <a href="#"><span class="social-icon"><img src="img/linkedin2.png" alt="facebook logo" /></span></a>
-              <a href="#"><span class="social-icon"><img src="img/x.png" alt="facebook logo" /></span></a>
-              <a href="#"><span class="social-icon"><img src="img/instagram.png" alt="facebook logo" /></span></a>
+              <a href="#"><span id="facebook" class="social-icon"><img src="img/facebook.png" alt="facebook logo" /></span></a>
+              <a href="#"><span id="linkedin" class="social-icon"><img src="img/linkedin2.png" alt="LinkedIn logo" /></span></a>
+              <a href="#"><span id="twitter" class="social-icon"><img src="img/x.png" alt="X (Twitter) logo" /></span></a>
+              <a href="#"><span id="instagram" class="social-icon"><img src="img/instagram.png" alt="Instagram logo" /></span></a>
             </div>
           </div>
           <div class="footer-row menus">

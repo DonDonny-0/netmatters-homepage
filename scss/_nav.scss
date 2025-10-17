@@ -39,31 +39,31 @@
     }
 
     #c-and-d-nav {
-      @include nav-submenu($c-and-d-color);
+      @include nav-submenu($c-and-d-color, #526781);
     }
 
     #it-nav {
-      @include nav-submenu($it-color);
+      @include nav-submenu($it-color, #286abd);
     }
 
     #dm-nav {
-      @include nav-submenu($dm-color);
+      @include nav-submenu($dm-color, #25a25a);
     }
 
     #ts-nav {
-      @include nav-submenu($ts-color);
+      @include nav-submenu($ts-color, #bc2c28);
     }
 
     #web-dev-nav {
-      @include nav-submenu($web-dev-color);
+      @include nav-submenu($web-dev-color, #79539a);
     }
 
     #cyber-sec-nav {
-      @include nav-submenu($cyber-sec-color);
+      @include nav-submenu($cyber-sec-color, #de093f);
     }
 
     #dev-course-nav {
-      @include nav-submenu($dev-course-color);
+      @include nav-submenu($dev-course-color, #a3331d);
     }
   }
 

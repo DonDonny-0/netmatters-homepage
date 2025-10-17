@@ -4,6 +4,11 @@
   @include view-link-bottom;
   color: black;
 
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
   .service-header {
     @include view-link;
     

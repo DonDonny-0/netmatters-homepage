@@ -15,8 +15,12 @@
     
     .content{
       margin: 0 20px;
-      //width: 100%;
+      width: 100%;
       height: auto;
+      
+      h1 {
+        font-size: 1.9em;
+      }
     }
 
     #google-trust {

@@ -1,11 +1,15 @@
 @mixin btn($color) {
+  a {
+    color: unset;
+    text-decoration: unset;
+  }
   padding: 12px 10px;
   margin: 5px 0;
   border-radius: 5px;
   background-color: $color;
   border: 1px solid $color;
   color: white;
-  font-size: 1.05em;
+  font-size: 1.1em;
   text-transform: uppercase;
   @content;
   &:hover {
@@ -21,6 +25,7 @@
   border-radius: 10px;
   padding: 30px;
   transition: background-color 0.5s, transform 0.5s;
+  height: 100%;
 
   .icon {
     height: 65px;
@@ -69,9 +74,10 @@
   grid-gap: 30px;
   text-align: center;
   margin-top: 30px;
+  height: 100%;
 }
 
-@mixin nav-submenu($color) {
+@mixin nav-submenu($color, $bk-color) {
 
   i {
     font-size: 22px;
@@ -84,10 +90,10 @@
   }
 
   div {
-    background-color: $color;
+    background-color: $bk-color;
     display: none;
     position: absolute;
-    top: 21%;
+    top: 25%;
     left: 0;
     padding: 50px 0;
     z-index: 1;
@@ -95,7 +101,7 @@
     text-align: left;
 
     @media (min-width: $bkpoint-lg) {
-      top: 19%;
+      top: 24%;
     }
 
     li {
@@ -116,6 +122,16 @@
 
     i {
       color: white;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      border-width: 35px 68px 0;
+      z-index: 5;
+      border-style: solid;
+      border-color: $color transparent transparent;
+      transform: translateX(-40%) translateY(250%);
     }
 
     div {
@@ -140,15 +156,13 @@
       text-decoration: underline;
     }
 
+    i {
+      margin-left: 5px;
+    }
+
     a {
       text-decoration: none;
       color: $heading-color;
-
-      .arrow {
-        display: inline-block;
-        margin-left: 8px;
-        color: $heading-color;
-      }
     }
 
     @media (max-width: $bkpoint-sm) {
@@ -167,6 +181,11 @@
         text-decoration: underline;
       }
     }
+
+    i {
+      margin-left: 5px;
+    }
+
     text-align: center;
     @media (min-width: $bkpoint-sm) {
       display: none;

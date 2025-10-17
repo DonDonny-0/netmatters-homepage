@@ -24,12 +24,21 @@
     flex-wrap: wrap;
     background-color: white;
     width: 100%;
+    height: 100%;
 
     div {
       margin: 0;
     }
 
     #article-3 {
+      .read-more {
+        @include btn(#4183d7);
+
+        &:hover {
+          background-color: #4183d7
+        }
+      }
+
       @media (min-width: $bkpoint-sm) and (max-width: $bkpoint-lg) {
         display: none;
       }
@@ -54,24 +63,28 @@
       }
 
       .read-more {
-        @include btn($c-and-d-color);
+        @include btn(#f7b322);
         display: inline-block;
         border-radius: 2px;
         &:hover {
-          background-color: $c-and-d-color;
+          background-color: #f7b322;
         } 
       }
       
       @media (min-width: $bkpoint-sm) {
-        flex: 50%
+        flex: 25%;
+        height: 80%;
+        margin: 0 10px;
+
       }
 
       @media (min-width: $bkpoint-md) {
-        flex: 25%
+        flex: 25%;
+        height: 100%;
+        margin: 0 15px;
       }
 
       @media (min-width: $bkpoint-lg) {
-        margin: 0 15px;
         height: 100%;
       }
     }
