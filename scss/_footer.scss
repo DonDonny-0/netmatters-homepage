@@ -1,28 +1,40 @@
 footer {
   background-color: $bkg-color-primary;
   color: white;
-  padding: 30px 0 0;
+  padding: 15px 0 0;
   position: relative;
 
   .footer-row {
     display: flex;
     flex-wrap: wrap;
     margin-top: 25px;
+    justify-content:space-between;
+
+    h4 {
+      font-weight: 400;
+    }
 
     .menus {
       flex-direction: row;
-      flex-grow: 1;
       padding-bottom: 20px;
     }
 
     .footer-menu {
       flex: 100%;
       margin-bottom: 10px;
-      line-height: 0.7rem;
+      line-height: 1rem;
 
       #footer-logo {
         width: 90%;
         margin-bottom: 10px;
+
+        @media (min-width: $bkpoint-sm) {
+          width: 50%;
+        }
+
+        @media (min-width: $bkpoint-lg) {
+          width: 70%;
+        }
       }
 
       @media (min-width: $bkpoint-sm) {
@@ -35,14 +47,15 @@ footer {
       @media (min-width: $bkpoint-md) {
         flex: 25%;
         p {
-          line-height: 0.8rem;
+          line-height: 1.1rem;
         }
       }
 
       @media (min-width: $bkpoint-lg) {
         margin-bottom: 40px;
         p {
-          line-height: 1.2rem;
+          line-height: 1rem;
+          font-size: 0.8rem;
         }
       }
 
@@ -59,6 +72,28 @@ footer {
     background-color: #212330;
     padding: 10px 0 10px 15px;
     line-height: 0.2em;
+
+    #copy {
+      @media (max-width: $bkpoint-sm) {
+        margin-left: -10px;
+      }
+    }
+
+    #sitemap {
+      margin-left: 5px;
+
+      @media (max-width: $bkpoint-sm) {
+        margin-left: -10px;
+      }
+    }
+
+    #rights {
+      margin-left: 5px;
+
+      @media (max-width: $bkpoint-sm) {
+        margin-left: -10px;
+      }
+    }
 
     .details {
       display: flex;;
