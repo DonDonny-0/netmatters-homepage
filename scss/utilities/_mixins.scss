@@ -108,7 +108,7 @@
     background-color: $bk-color;
     display: none;
     position: absolute;
-    top: 24%;
+    top: 25%;
     left: 0;
     padding: 50px 0;
     z-index: 1;
@@ -116,7 +116,7 @@
     text-align: left;
 
     @media (min-width: $bkpoint-lg) {
-      top: 22%;
+      top: 24%;
     }
 
     li {
@@ -134,6 +134,7 @@
   }
   &:hover {
     background-color: $color;
+    height: 120px;
 
     i {
       color: white;

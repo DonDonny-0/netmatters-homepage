@@ -20,6 +20,11 @@ footer {
       margin-bottom: 10px;
       line-height: 0.7rem;
 
+      #footer-logo {
+        width: 90%;
+        margin-bottom: 10px;
+      }
+
       @media (min-width: $bkpoint-sm) {
         flex: 50%;
         p {
