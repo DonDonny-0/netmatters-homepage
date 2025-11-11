@@ -22,6 +22,7 @@
     }
 
     h1{
+      padding-top: 15px;
       font-size: 2.25rem;
     }
   }
@@ -48,14 +49,25 @@
 
       #cd-service {
         @include service-item($c-and-d-color);
+        button {
+          background-color: #f7b322;
+          border-color: #f7b322;
+          border-radius: 3px;
+        }
       }
 
       #it-service {
         @include service-item($it-color);
+        button {
+          border-radius: 3px;
+        }
       }
 
       #dm-service {
         @include service-item($dm-color);
+        button {
+          border-radius: 3px;
+        }
       }
     }
 
@@ -72,18 +84,30 @@
 
       #ts-service {
         @include service-item($ts-color);
+        button {
+          border-radius: 3px;
+        }
       }
 
       #wd-service {
         @include service-item($web-dev-color);
+        button {
+          border-radius: 3px;
+        }
       }
 
       #cs-service {
         @include service-item($cyber-sec-color);
+        button {
+          border-radius: 3px;
+        }
       }
 
       #dev-service {
         @include service-item($dev-course-color);
+        button {
+          border-radius: 3px;
+        }
       }
     }
   }

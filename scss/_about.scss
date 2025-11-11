@@ -5,21 +5,44 @@
   color: white;
   font-size: 1rem;
   line-height: 1.4;
-  margin: 0 0 20px;
-  padding: 0 auto;
+  margin: 0 0 50px;
+  padding: 0 50px;
+
+  @media screen and (max-width: $bkpoint-sm) {
+    padding: 0;
+  }
 
   .about-content {
     display: flex;
     flex-direction: column;
     padding: 20px 0;
+
+    strong {
+      font-weight: 600;
+    }
+
+    @media screen and (min-width: $bkpoint-lg) {
+
+      .about-section-1, .about-section-2 {
+        width: 600px;
+      }
+    }
+
+    @media screen and (min-width: $bkpoint-md) {
+
+      .about-section-1, .about-section-2 {
+        width: 485px;
+      }
+    }
     
     .content{
-      margin: 0 20px;
       width: 100%;
       height: auto;
+      padding: 0 10px;
 
       p {
         line-height: 1.875rem;
+        margin-bottom: 25px;
       }
       
       h2 {
@@ -41,9 +64,16 @@
       }
     }
 
-    .about-section-2>div>p {
-      font-weight: 600;
-      font-size: 1.3rem;
+    .about-section-2 {
+
+      div>p {
+        font-weight: 600;
+        font-size: 1.3rem;
+      }
+
+      button {
+        margin-top: 25px;
+      }
     }
 
     #google-trust {
@@ -52,8 +82,10 @@
 
     }
 
-    .star {
-      height: 50px;
+    .fa-star {
+      font-size: 40px;
+      color: orange;
+      margin-right: -5px;
     }
 
     @media (min-width: $bkpoint-md) {
@@ -62,28 +94,59 @@
   }
 
   .btn-layout {
-    margin-top: 10px;
+    margin-top: 20px;
     display: block;
     margin-right: 10px;
   }
 
   button {
-    @include btn($bkg-color-secondary);
+    @include btn(#272936);
+    border-radius: 6px;
     margin-right: 10px;
-    padding: 10px 20px;
-  }
+    padding: 10px 30px;
+    font-size: 20px;
+    
 
-  button:hover {
-    background-color: darken($color: $bkg-color-secondary, $amount: 20%);
+    &:first-child {
+      margin-bottom: 15px;
+    }
+
+    &:hover {
+      background-color: #121318;
+      border-color: #121318;
+    }
   }
 
   #g-reviews {
-    @include btn(cornflowerblue);
+    @include btn(#4387f6);
     margin-right: 10px;
+    border-radius: 6px;
+    padding: 10px 30px;
+    font-size: 20px;
+    margin-top: 20px;
+
+    &:hover {
+      background-color: #166af4;
+      border-color: #166af4;
+    }
   }
 
   #t-reviews {
-    @include btn(mediumseagreen);
+    @include btn(#00b67b);
+    border-radius: 6px;
+    padding: 10px 30px;
+    font-size: 20px;
+    margin-top: 20px;
+    
+
+    &:hover {
+      background-color: #009b69;
+      border-color: #009b69;
+    }
+
+    @media screen and (max-width: $bkpoint-sm) {
+      margin-top: 15px;
+    }
   }
 
   .arrow {
@@ -100,6 +163,14 @@
       padding-left: 0;
       padding-right: 0;
     }
+  }
+}
+
+.container {
+  padding: 0;
+  @media screen and (max-width: $bkpoint-sm) {
+    margin: 0;
+    padding: 0 5px 25px;
   }
 }
 

@@ -1,6 +1,8 @@
 body {
   margin: 0;
   height: 100%;
+  letter-spacing: .4px;
+  color: #666;
 }
 
 * {
@@ -14,14 +16,14 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $bkpoint-sm) {
     width: 750px;
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: $bkpoint-md) {
     width: 970px;
   }
-  @media (min-width: 1260px) {
+  @media (min-width: $bkpoint-lg) {
     width: 1200px;
   }
   

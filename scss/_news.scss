@@ -1,12 +1,22 @@
 .news {
   @include view-link-bottom;
+  margin-bottom: -50px;
+
+  i {
+    color: black;
+    font-size: 1.5rem;
+  }
 
   .news-head {
     @include view-link;
     h1 {
       margin-top: 10px;
-      font-size: 1.9em;
-      font-weight: bold;
+      font-size: 1.625em;
+      font-weight: 600;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
 
     h2 {
@@ -26,8 +36,37 @@
     width: 100%;
     height: 100%;
 
-    .article>a>.article-details>.author>.posted-by>h4 {
-      color: black;
+    .article>.article-details>.author>.posted-by>strong {
+      color: #333645;
+      font-weight: 600;
+      line-height: 1.375rem;
+    }
+
+    .article>.article-details>.author {
+      font-size: 0.875rem;
+    }
+
+    .article>.img-container {
+      position: relative;
+      .category {
+        color: white;
+        background-color: #67809f;
+        position: absolute;
+        right: 0;
+        font-size: 0.75rem;
+        padding: 0 10px;
+        line-height: 1.438rem;
+        text-transform: uppercase;
+        z-index: 1;
+        top: 10px;
+        font-weight: 600;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
     }
 
     div {
@@ -35,11 +74,28 @@
     }
 
     #article-3 {
+
+      h4 {color: $it-color}
+
+      .img-container>.category {
+        background-color: $it-color;
+      }
+
+      #author {
+        color: #333645;
+        font-weight: 600;
+      }
+
+
       .read-more {
-        @include btn(#4183d7);
+        @include btn($it-color);
+        font-size: 1.063rem;
+        padding: 5px 15px;
+        line-height: 35px;
+        border-radius: 3px;
 
         &:hover {
-          background-color: #4183d7
+          background-color: $it-color;
         }
       }
 
@@ -52,6 +108,7 @@
       width: 100%;
       height: 100%;
       flex: 100%;
+      font-size: 0.8125rem;
       box-shadow: 0 3px 35px rgba(0,0,0, .1);
       border: 1px solid rgba(0,0,0, .2);
       margin: 0 0 30px;
@@ -84,7 +141,10 @@
       .read-more {
         @include btn(#f7b322);
         display: inline-block;
-        border-radius: 2px;
+        font-size: 1.063rem;
+        padding: 5px 15px;
+        line-height: 35px;
+        border-radius: 3px;
         &:hover {
           background-color: #f7b322;
         } 
@@ -93,14 +153,13 @@
       @media (min-width: $bkpoint-sm) {
         flex: 25%;
         height: 80%;
-        margin: 0 10px;
+        margin: 0 15px;;
 
       }
 
       @media (min-width: $bkpoint-md) {
         flex: 25%;
         height: 100%;
-        margin: 0 15px;
       }
 
       @media (min-width: $bkpoint-lg) {
@@ -136,5 +195,11 @@
         }
       }
     }
+  }
+}
+
+.container {
+  @media screen and (max-width: $bkpoint-sm) {
+    padding: 0 15px;
   }
 }
