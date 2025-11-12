@@ -137,6 +137,23 @@ footer {
         margin-left: 0;
         margin-right: 0;
       }
+
+      a {
+        margin: 13px 8px;
+
+        @media screen and (max-width: $bkpoint-sm) {
+          margin: 0;
+        }
+      }
+
+      &:last-child>#visible-xs {
+        display: inline;
+        margin-left: 5px;
+
+        @media screen and (max-width: $bkpoint-sm) {
+          display: none;
+        }
+      }
     }
 
     .container {
