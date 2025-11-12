@@ -113,18 +113,19 @@
     background-color: $bk-color;
     display: none;
     position: absolute;
-    top: 25%;
+    //top: 100%;
     left: 0;
     padding: 50px 0;
-    z-index: 1;
+    z-index: 0;
     width: 100%;
     text-align: left;
 
-    @media (min-width: $bkpoint-lg) {
-      top: 24%;
+    @media (max-width: $bkpoint-lg) {
+      margin-top: 15px;
     }
 
     li {
+      h1 {margin-bottom: 25px;}
       width: 33%;
       margin: -5px 0;
       font-weight: bold;
@@ -139,7 +140,7 @@
   }
   &:hover {
     background-color: $color;
-    height: 120px;
+    //height: 120px;
 
     i {
       color: white;
@@ -148,14 +149,15 @@
     &::before {
       content: "";
       position: absolute;
-      border-width: 35px 68px 0;
+      border-width: 35px 66px 0;
       z-index: 2;
       border-style: solid;
       border-color: $color transparent transparent;
-      transform: translateX(-40%) translateY(225%);
+      transform: translateX(-50%) translateY(335%);
 
       @media (min-width: $bkpoint-lg) {
-        transform: translateX(-40%) translateY(205%);
+        border-width: 35px 85px 0;
+        transform: translateX(-50%) translateY(280%);
       } 
     }
 
