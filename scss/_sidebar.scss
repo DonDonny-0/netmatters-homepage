@@ -1,0 +1,38 @@
+.sidebar {
+  display: none;
+  width: 275px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background: #333645;
+  overflow: auto;
+
+  .visible {
+    padding: 20px;
+  }
+
+  ul {
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+    text-align: center;
+    
+    li {
+      list-style: none;
+      text-align: center;
+      padding: 20px 0 0;
+
+      a {
+        display: block;
+        padding: 19px 0 18px;
+        border: 1px solid;
+        small {display: block;}
+      }
+    }
+  }
+
+  @media screen and (max-width: $bkpoint-sm) {
+    display: block;
+  }
+}
