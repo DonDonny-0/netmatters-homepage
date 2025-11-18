@@ -1,12 +1,12 @@
 .sidebar {
-  display: none;
-  width: 275px;
+  width: 350px;
   position: fixed;
   top: 0;
   right: 0;
   height: 100vh;
   background: #333645;
   overflow: auto;
+  z-index: 9;
 
   .visible {
     padding: 20px;
@@ -32,7 +32,7 @@
     }
   }
 
-  @media screen and (max-width: $bkpoint-sm) {
-    display: block;
-  }
+  // @media screen and (max-width: $bkpoint-sm) {
+  //   display: block;
+  // }
 }

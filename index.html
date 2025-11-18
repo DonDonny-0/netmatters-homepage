@@ -8,174 +8,747 @@
     <title> Full Service Digital Agency | Cambridgeshire & Norfolk
           | Netmatters</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="js/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
     <script src="https://kit.fontawesome.com/03a8564f56.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <div class="header-bar">
-        <div class="container">
-          <div class="header-items">
-            <div class="header-left">
-              <a href="#"><img src="img/f-logo.webp" alt=""></a>
+    <div id="container">
+      <header>
+        <div class="header-bar">
+          <div class="container">
+            <div class="header-items">
+              <div class="header-left">
+                <a href="#"><img src="img/f-logo.webp" alt=""></a>
+              </div>
+              <div class="header-right">
+                <a href="#"><button id="support-btn"><i class="fa-solid fa-computer-mouse"></i>support</button></a>
+                <a href="#"><button id="contact-btn"><i class="fa-solid fa-paper-plane"></i>Contact</button></a>
+                <form action="#">
+                  <input type="text" id="search-box" name="search" placeholder="Search..." value>
+                  <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <button id="hamburger"><i class="fa-solid fa-bars"></i></button>
+                <button id="contact-sm">
+                  <i class="fa-solid fa-phone-volume"></i>
+                </button>
+              </div>
             </div>
-            <div class="header-right">
-              <a href="#"><button id="support-btn"><i class="fa-solid fa-computer-mouse"></i>support</button></a>
-              <a href="#"><button id="contact-btn"><i class="fa-solid fa-paper-plane"></i>Contact</button></a>
-              <form action="#">
-                <input type="text" id="search-box" name="search" placeholder="Search..." value>
-                <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
-              </form>
-              <a href="#"><button id="hamburger"><i class="fa-solid fa-bars"></i></button></a>
-              <button id="contact-sm">
-                <i class="fa-solid fa-phone-volume"></i>
-              </button>
-            </div>
+            <form action="#" class="search-sm">
+              <input type="text" id="search-box-sm" name="search-sm" placeholder="Search..." value>
+              <button id="search-btn-sm"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
           </div>
-          <form action="#" class="search-sm">
-            <input type="text" id="search-box-sm" name="search-sm" placeholder="Search..." value>
-            <button id="search-btn-sm"><i class="fa-solid fa-magnifying-glass"></i></button>
-          </form>
+        </div>
+      </header>
+      <div class="nav-bar">
+        <div class="container">
+          <ul class="navigation">
+            <li class="nav-item" id="c-and-d-nav">
+              <a id="main-nav" href="#">
+                <i class="fa-solid fa-user-gear"></i><br>
+                <small>Consultancy</small><br> & Development
+              </a>
+              <div>
+                <ul class="container">
+                  <li><h1>Our Consultancy & Development Services</h1></li><br>
+                  <li><h2><a href="#"><i class="fa-solid fa-gears"></i>Bespoke CRM</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-solid fa-briefcase"></i>Business Automation</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-solid fa-arrow-up-from-bracket"></i>Software Integration</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-solid fa-mobile-screen"></i>Mobile App Development</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-regular fa-folder-open"></i>Bespoke Databases</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-regular fa-share-from-square"></i>Sharepoint Development</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-solid fa-download"></i>Operational Systems</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-solid fa-user-group"></i>Business Central Implementation</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-solid fa-laptop"></i>Internet of Things (IoT) Software</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-solid fa-cloud"></i>Intranet Development</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-solid fa-cloud-arrow-down"></i>Customer Portal Development</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-solid fa-earth-americas"></i>Reporting Hub</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-regular fa-handshake"></i>SAP S/4HANA Management</a></h2></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item" id="it-nav">
+              <a id="main-nav" href="#">
+                <i class="fa-solid fa-display"></i><br>
+                <small>IT</small><br>Support</a>
+              <div>
+                <ul class="container">
+                  <li><h1>Our IT Support Services</h1></li><br>
+                  <li><h2><a href="#"><i class="fa-regular fa-headphones"></i>Managed IT Support</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-solid fa-briefcase"></i>Business IT Support</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-solid fa-laptop"></i>Office 365 for Business</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-solid fa-graduation-cap"></i>IT Consultancy</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-solid fa-cloud"></i>Cloud Service Provider</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-solid fa-server"></i>Data Backup & Disaster Recovery</a></h2></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item" id="dm-nav">
+              <a id="main-nav" href="#">
+                <i class="fa-solid fa-chart-simple"></i><br>
+                <small>Digital</small><br>Marketing
+              </a>
+              <div>
+                <ul class="container">
+                  <li><h1>Our Digital Marketing Services</h1></li><br>
+                  <li><h2><a href="#"><i class="fa-solid fa-magnifying-glass"></i>Search Engine Optimisation (SEO)</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-solid fa-hand-holding-dollar"></i>Pay Per Click Advertising (PPC)</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-solid fa-chart-line"></i>Conversion Rate Optimisation (CRO)</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-solid fa-envelope"></i>Email Marketing</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-solid fa-user-group"></i>Social Media Marketing</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-solid fa-pencil"></i>Content Marketing</a></h2></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item" id="ts-nav">
+              <a id="main-nav" href="#">
+                <i class="fa-solid fa-phone-volume"></i><br>
+                <small>Telecoms</small><br> Services
+              </a>
+              <div>
+                <ul class="container">
+                  <li><h1>Our Telecoms Services</h1></li><br>
+                  <li><h2><a href="#"><i class="fa-solid fa-ticket"></i>Business Mobile</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-solid fa-phone"></i>Phone Ststem Health Check</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-solid fa-square-phone"></i>Business Phone Systems</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-solid fa-gauge"></i>Business Connectivity</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-regular fa-handshake"></i>Telecoms Bill Review</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-solid fa-phone-volume"></i>3CX Systems</a></h2></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item" id="web-dev-nav">
+              <a id="main-nav" href="#">
+                <i class="fa-solid fa-code"></i><br>
+                <small>Web</small><br> Design
+              </a>
+              <div>
+                <ul class="container">
+                  <li><h1>Our Web Design Services</h1></li><br>
+                  <li><h2><a href="#"><i class="fa-solid fa-pencil"></i>Bespoke Website Design</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-solid fa-cart-shopping"></i>eCommerce Website Design</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-solid fa-display"></i>Pay Monthly Websites</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-solid fa-bullhorn"></i>Branding & Design</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-solid fa-mobile-screen"></i>Mobile App Development</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-solid fa-cloud"></i>Web Hosting</a></h2></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item" id="cyber-sec-nav">
+              <a id="main-nav" href="#">
+                <i class="fa-solid fa-shield-halved"></i><br>
+                <small>Cyber</small><br> Security
+              </a>
+              <div>
+                <ul class="container">
+                  <li><h1>Our Cyber Security Services</h1></li><br>
+                  <li><h2><a href="#"><i class="fa-solid fa-paste"></i>Cyber Security Assessment</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-solid fa-clock"></i>Cyber Security Management</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-solid fa-flask"></i>Cyber Penetration Testing</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-solid fa-graduation-cap"></i>Cyber Essentials Certification</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-solid fa-shield-halved"></i>PCI Compliance</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-solid fa-lock"></i>Hacking Prevention</a></h2></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item" id="dev-course-nav">
+              <a id="main-nav" href="#">
+                <i class="fa-solid fa-graduation-cap"></i><br>
+                <small>Developer</small><br> Course
+              </a>
+              <div>
+                <ul class="container">
+                  <li><h1>Our Developer Course Services</h1></li><br>
+                  <li><h2><a href="#"><i class="fa-solid fa-laptop"></i>Train For a Career In Tech</a></h2></li>
+                  <li><h2><a href="#"><i class="fa-solid fa-code"></i>Skills Bootcamp</a></h2></li>
+                  <li><h2><a href="#"><span><i class="fa-solid fa-question"></i></span><span>Scion Scheme Frequently Asked Questions</span></a></h2></li>
+                  <li><h2><a href="#"><i class="fa-regular fa-handshake"></i>Scion collaborators</a></h2></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
-    </header>
-    <div class="nav-bar">
-      <div class="container">
-        <ul class="navigation">
-          <li class="nav-item" id="c-and-d-nav">
-            <a id="main-nav" href="#">
-              <i class="fa-solid fa-user-gear"></i><br>
-              <small>Consultancy</small><br> & Development
-            </a>
-            <div>
-              <ul class="container">
-                <li><h1>Our Consultancy & Development Services</h1></li><br>
-                <li><h2><a href="#"><i class="fa-solid fa-gears"></i>Bespoke CRM</a></h2></li>
-                <li><h2><a href="#"><i class="fa-solid fa-briefcase"></i>Business Automation</a></h2></li>
-                <li><h2><a href="#"><i class="fa-solid fa-arrow-up-from-bracket"></i>Software Integration</a></h2></li>
-                <li><h2><a href="#"><i class="fa-solid fa-mobile-screen"></i>Mobile App Development</a></h2></li>
-                <li><h2><a href="#"><i class="fa-regular fa-folder-open"></i>Bespoke Databases</a></h2></li>
-                <li><h2><a href="#"><i class="fa-regular fa-share-from-square"></i>Sharepoint Development</a></h2></li>
-                <li><h2><a href="#"><i class="fa-solid fa-download"></i>Operational Systems</a></h2></li>
-                <li><h2><a href="#"><i class="fa-solid fa-user-group"></i>Business Central Implementation</a></h2></li>
-                <li><h2><a href="#"><i class="fa-solid fa-laptop"></i>Internet of Things (IoT) Software</a></h2></li>
-                <li><h2><a href="#"><i class="fa-solid fa-cloud"></i>Intranet Development</a></h2></li>
-                <li><h2><a href="#"><i class="fa-solid fa-cloud-arrow-down"></i>Customer Portal Development</a></h2></li>
-                <li><h2><a href="#"><i class="fa-solid fa-earth-americas"></i>Reporting Hub</a></h2></li>
-                <li><h2><a href="#"><i class="fa-regular fa-handshake"></i>SAP S/4HANA Management</a></h2></li>
-              </ul>
+      <div class="banner"> 
+        <div class="banner-carousel">
+          <div class="banner-item">
+            <div class="banner-img">
+              <img src="img/home-YLei.webp" alt="">
             </div>
-          </li>
-          <li class="nav-item" id="it-nav">
-            <a id="main-nav" href="#">
-              <i class="fa-solid fa-display"></i><br>
-              <small>IT</small><br>Support</a>
-            <div>
-              <ul class="container">
-                <li><h1>Our IT Support Services</h1></li><br>
-                <li><h2><a href="#"><i class="fa-regular fa-headphones"></i>Managed IT Support</a></h2></li>
-                <li><h2><a href="#"><i class="fa-solid fa-briefcase"></i>Business IT Support</a></h2></li>
-                <li><h2><a href="#"><i class="fa-solid fa-laptop"></i>Office 365 for Business</a></h2></li>
-                <li><h2><a href="#"><i class="fa-solid fa-graduation-cap"></i>IT Consultancy</a></h2></li>
-                <li><h2><a href="#"><i class="fa-solid fa-cloud"></i>Cloud Service Provider</a></h2></li>
-                <li><h2><a href="#"><i class="fa-solid fa-server"></i>Data Backup & Disaster Recovery</a></h2></li>
-              </ul>
+            <div class="banner-content">
+              <div class="container">
+                <div class="banner-text">
+                  <h1>The East Of England's Leading Technology Company</h1>
+                  <p>Performance-driven digital and technology services<br> with complete transparency</p>
+                  <button class="learn-more-1"><a href="#">Why Choose Us?<i class="fa-solid fa-arrow-right"></i></a></button>
+                </div>
+              </div>
             </div>
-          </li>
-          <li class="nav-item" id="dm-nav">
-            <a id="main-nav" href="#">
-              <i class="fa-solid fa-chart-simple"></i><br>
-              <small>Digital</small><br>Marketing
-            </a>
-            <div>
-              <ul class="container">
-                <li><h1>Our Digital Marketing Services</h1></li><br>
-                <li><h2><a href="#"><i class="fa-solid fa-magnifying-glass"></i>Search Engine Optimisation (SEO)</a></h2></li>
-                <li><h2><a href="#"><i class="fa-solid fa-hand-holding-dollar"></i>Pay Per Click Advertising (PPC)</a></h2></li>
-                <li><h2><a href="#"><i class="fa-solid fa-chart-line"></i>Conversion Rate Optimisation (CRO)</a></h2></li>
-                <li><h2><a href="#"><i class="fa-solid fa-envelope"></i>Email Marketing</a></h2></li>
-                <li><h2><a href="#"><i class="fa-solid fa-user-group"></i>Social Media Marketing</a></h2></li>
-                <li><h2><a href="#"><i class="fa-solid fa-pencil"></i>Content Marketing</a></h2></li>
-              </ul>
+          </div>
+          <div class="banner-item">
+            <div class="banner-img">
+              <img src="img/home-O67Y.webp" alt="">
             </div>
-          </li>
-          <li class="nav-item" id="ts-nav">
-            <a id="main-nav" href="#">
-              <i class="fa-solid fa-phone-volume"></i><br>
-              <small>Telecoms</small><br> Services
-            </a>
-            <div>
-              <ul class="container">
-                <li><h1>Our Telecoms Services</h1></li><br>
-                <li><h2><a href="#"><i class="fa-solid fa-ticket"></i>Business Mobile</a></h2></li>
-                <li><h2><a href="#"><i class="fa-solid fa-phone"></i>Phone Ststem Health Check</a></h2></li>
-                <li><h2><a href="#"><i class="fa-solid fa-square-phone"></i>Business Phone Systems</a></h2></li>
-                <li><h2><a href="#"><i class="fa-solid fa-gauge"></i>Business Connectivity</a></h2></li>
-                <li><h2><a href="#"><i class="fa-regular fa-handshake"></i>Telecoms Bill Review</a></h2></li>
-                <li><h2><a href="#"><i class="fa-solid fa-phone-volume"></i>3CX Systems</a></h2></li>
-              </ul>
+            <div class="banner-content">
+              <div class="container">
+                <div class="banner-text">
+                  <h1>Bespoke Software</h1>
+                  <p>Delivering expert bespoke software<br> solutions across a range of indusrtries.</p>
+                  <button class="learn-more-2"><a href="#">Find out More<i class="fa-solid fa-arrow-right"></i></a></button>
+                </div>
+              </div>
             </div>
-          </li>
-          <li class="nav-item" id="web-dev-nav">
-            <a id="main-nav" href="#">
-              <i class="fa-solid fa-code"></i><br>
-              <small>Web</small><br> Design
-            </a>
-            <div>
-              <ul class="container">
-                <li><h1>Our Web Design Services</h1></li><br>
-                <li><h2><a href="#"><i class="fa-solid fa-pencil"></i>Bespoke Website Design</a></h2></li>
-                <li><h2><a href="#"><i class="fa-solid fa-cart-shopping"></i>eCommerce Website Design</a></h2></li>
-                <li><h2><a href="#"><i class="fa-solid fa-display"></i>Pay Monthly Websites</a></h2></li>
-                <li><h2><a href="#"><i class="fa-solid fa-bullhorn"></i>Branding & Design</a></h2></li>
-                <li><h2><a href="#"><i class="fa-solid fa-mobile-screen"></i>Mobile App Development</a></h2></li>
-                <li><h2><a href="#"><i class="fa-solid fa-cloud"></i>Web Hosting</a></h2></li>
-              </ul>
+          </div>
+          <div class="banner-item">
+            <div class="banner-img">
+              <img src="img/home-gay8.webp" alt="">
             </div>
-          </li>
-          <li class="nav-item" id="cyber-sec-nav">
-            <a id="main-nav" href="#">
-              <i class="fa-solid fa-shield-halved"></i><br>
-              <small>Cyber</small><br> Security
-            </a>
-            <div>
-              <ul class="container">
-                <li><h1>Our Cyber Security Services</h1></li><br>
-                <li><h2><a href="#"><i class="fa-solid fa-paste"></i>Cyber Security Assessment</a></h2></li>
-                <li><h2><a href="#"><i class="fa-solid fa-clock"></i>Cyber Security Management</a></h2></li>
-                <li><h2><a href="#"><i class="fa-solid fa-flask"></i>Cyber Penetration Testing</a></h2></li>
-                <li><h2><a href="#"><i class="fa-solid fa-graduation-cap"></i>Cyber Essentials Certification</a></h2></li>
-                <li><h2><a href="#"><i class="fa-solid fa-shield-halved"></i>PCI Compliance</a></h2></li>
-                <li><h2><a href="#"><i class="fa-solid fa-lock"></i>Hacking Prevention</a></h2></li>
-              </ul>
+            <div class="banner-content">
+              <div class="container">
+                <div class="banner-text">
+                  <h1>IT Support</h1>
+                  <p>Fast and cost-effective IT support<br> services for your business</p>
+                  <button class="learn-more-3"><a href="#">Find out More<i class="fa-solid fa-arrow-right"></i></a></button>
+                </div>
+              </div>
             </div>
-          </li>
-          <li class="nav-item" id="dev-course-nav">
-            <a id="main-nav" href="#">
-              <i class="fa-solid fa-graduation-cap"></i><br>
-              <small>Developer</small><br> Course
-            </a>
-            <div>
-              <ul class="container">
-                <li><h1>Our Developer Course Services</h1></li><br>
-                <li><h2><a href="#"><i class="fa-solid fa-laptop"></i>Train For a Career In Tech</a></h2></li>
-                <li><h2><a href="#"><i class="fa-solid fa-code"></i>Skills Bootcamp</a></h2></li>
-                <li><h2><a href="#"><span><i class="fa-solid fa-question"></i></span><span>Scion Scheme Frequently Asked Questions</span></a></h2></li>
-                <li><h2><a href="#"><i class="fa-regular fa-handshake"></i>Scion collaborators</a></h2></li>
-              </ul>
+          </div>
+          <div class="banner-item">
+            <div class="banner-img">
+              <img src="img/home-6yTp.webp" alt="">
             </div>
-          </li>
-        </ul>
+            <div class="banner-content">
+              <div class="container">
+                <div class="banner-text">
+                  <h1>Digital Marketing</h1>
+                  <p>Generatring your new business through<br> results-driven marketing activities</p>
+                  <button class="learn-more-4"><a href="#">Find out More<i class="fa-solid fa-arrow-right"></i></a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="banner-item">
+            <div class="banner-img">
+              <img src="img/home-J8Xx.webp" alt="">
+            </div>
+            <div class="banner-content">
+              <div class="container">
+                <div class="banner-text">
+                  <h1>Telecoms Services</h1>
+                  <p>A new approach to connectivity, see<br> how we can help your business.</p>
+                  <button class="learn-more-5"><a href="#">Find out More<i class="fa-solid fa-arrow-right"></i></a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="banner-item">
+            <div class="banner-img">
+              <img src="img/home-K0pn.webp" alt="">
+            </div>
+            <div class="banner-content">
+              <div class="container">
+                <div class="banner-text">
+                  <h1>Web Design</h1>
+                  <p>For businesses and looking to make a strong<br> and effective first impression.</p>
+                  <button class="learn-more-6"><a href="#">Find out More<i class="fa-solid fa-arrow-right"></i></a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="banner-item">
+            <div class="banner-img">
+              <img src="img/home-MSxH.webp" alt="">
+            </div>
+            <div class="banner-content">
+              <div class="container">
+                <div class="banner-text">
+                  <h1>Cyber Security</h1>
+                  <p>Keeping businesses and ther customers<br> sensitive information protected.</p>
+                  <button class="learn-more-7"><a href="#">Find out More<i class="fa-solid fa-arrow-right"></i></a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="banner"> 
-      <div class="banner-text container">
-        <h1>The East Of England's Leading Technology Company</h1>
-        <p>Performance-driven digital and technology services<br> with complete transparency</p>
-        <button><a href="#">Why Choose Us?<i class="fa-solid fa-arrow-right"></i></a></button>
+      <main>
+        <div class="services">
+          <div class="container">
+            <div class="service-header clearfix">
+              <h2>Our Services</h1>
+              <h1><a href="#">View Our Work<em class="fa-solid fa-arrow-right"></em></a></h1>
+            </div>
+            <div class="service-grid">
+              <div class="service-grid-1">
+                <a href="#">
+                  <div id="cd-service">
+                    <span class="icon">
+                      <i class="fa-solid fa-user-gear"></i>
+                    </span>
+                    <h2>Consultancy & Development</h2>
+                    <p>Bespoke software solutions & consultancy for all your business needs including integrations and reporting.</p>
+                    <button>Read More</button>
+                  </div>
+                </a>
+                <a href="#">
+                  <div id="it-service">
+                    <span class="icon">
+                      <i class="fa-solid fa-display"></i>
+                    </span>
+                    <h2>IT Support</h2>
+                    <p>Fully managed IT support and consultancy packages tailored to meet your exact business needs.</p>
+                    <button>Read More</button>
+                  </div>
+                </a>
+                <a href="#">
+                  <div id="dm-service">
+                    <span class="icon">
+                      <i class="fa-solid fa-chart-simple"></i>
+                    </span>
+                    <h2>Digital Marketing</h2>
+                    <p>Driven brand awareness & ROI through creative digital marketing campaigns.</p>
+                    <button>Read More</button>
+                  </div>
+                </a>
+              </div>
+              <div class="service-grid-2">
+                <a href="#">
+                  <div id="ts-service">
+                    <span class="icon">
+                      <i class="fa-solid fa-phone-volume"></i>
+                    </span>
+                    <h2>Telecoms Services</h2>
+                    <p>Business telephony solutions including mobile & connectivity solutions.</p>
+                    <button id="telecoms">Read More</button>
+                  </div>
+                </a>
+                <a href="#">
+                  <div id="wd-service">
+                    <span class="icon">
+                      <i class="fa-solid fa-code"></i>
+                    </span>
+                    <h2>Web Design</h2>
+                    <p>User-centric design for businesses looking to make a lasting impression.</p>
+                    <button id="web-dev">Read More</button>
+                  </div>
+                </a>
+                <a href="#">
+                  <div id="cs-service">
+                    <span class="icon">
+                      <i class="fa-solid fa-shield-halved"></i>
+                    </span>
+                    <h2>Cyber Security</h2>
+                    <p>Prevention, testing, consultancy & breach management services.</p>
+                    <button id="cyber-sec">Read More</button>
+                  </div>
+                </a>
+                <a href="#">
+                  <div id="dev-service">
+                    <span class="icon">
+                      <i class="fa-solid fa-graduation-cap"></i>
+                    </span>
+                    <h2>Developer Course</h2>
+                    <p>Web design & software training courses designed to secure a job in tech.</p>
+                    <button id="dev-course">Read More</button>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <h1><a href="#">View Our Work<i class="fa-solid fa-arrow-right"></i></a></h1>
+          </div>
+        </div>
+        <div class="partners">
+          <div class="partners-row">
+            <img class="partner" src="img/partners/cyber-essentials-colour.webp" alt="">
+            <img class="partner" src="img/partners/future-50.webp" alt="">
+            <img class="partner" src="img/partners/GBC-colour.webp" alt="">
+            <img class="partner" src="img/partners/google-partner.webp" alt="">
+            <img class="partner" src="img/partners/investing-in-future-growth.webp" alt="">
+            <img class="partner" src="img/partners/iso-27001.webp" alt="">
+            <img class="partner" src="img/partners/norfolk-carbon-charter.webp" alt="">
+            <img class="partner" src="img/partners/norfolk_prohelp.webp" alt="">
+            <img class="partner" src="img/partners/PPC_logo.webp" alt="">
+            <img class="partner" src="img/partners/princess-royal-training.webp" alt="">
+            <img class="partner" src="img/partners/qms.webp" alt="">
+            <img class="partner" src="img/partners/skills-of-tomorrow.webp" alt="">
+          </div>
+        </div>
+        <div class="about">
+          <div class="container">
+            <div class="about-content">
+              <div class="about-section-1 content">
+                <div class="paragraph">
+                  <h2><strong>Welcome To Netmatters</strong></h2>
+                  <p><strong>Netmatters is a leading Bespoke Software, IT Support, and Digital Marketing company based in the East of England with offices in Cambridge, Wymondham, and Great Yarmouth.</strong></p>
+                  <p>We aren't tied into contracts with third-party providers, so you know that our recommendations for your business are based purely with one benefit in mind: to help improve your business with the most appropriate solutions.</p>
+                  <p>We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.</p>
+                </div>
+                <div class="btn-layout">
+                  <button><a href="#">Why Choose us?<i class="fa-solid fa-arrow-right"></i></a></button>
+                  <button><a href="#">Our Culture<i class="fa-solid fa-arrow-right"></i></a></button>
+                </div>
+              </div>
+              <div class="about-section-2 content">
+                <div class="paragraph">
+                  <h2><strong>What Our Clients Think</strong></h2>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p><em>Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!</em></p>
+                  <p id="quote">Eleanor bishop, Head of Marketing - <a href="#">Ashcroft Partnership LLP</a></p>
+                </div>
+                <div id="google-trust" class="btn-layout">
+                  <button id="g-reviews"><a href="#">Google Reviews<i class="fa-solid fa-arrow-right"></i></a></button>
+                  <button id="t-reviews"><a href="#">Trustpilot Reviews<i class="fa-solid fa-arrow-right"></i></a></button>
+                </div>
+              </div>       
+            </div>
+          </div>
+        </div>
+        <div class="news">
+          <div class="container">
+            <div class="news-head">
+              <h2>Latest News</h1>
+              <h1><a href="#">View All</a><i class="fa-solid fa-arrow-right"></i></h1>
+            </div>
+            <div class="articles">
+                <div class="article">
+                  <a href="#">
+                    <div class="img-container">
+                      <a href="#" class="category">Insights</a>
+                      <img src="img/news-pics/how-much-could-vKZG.webp" alt="Bespoke Software">
+                    </div>
+                    <div class="article-details">
+                      <h4>How much could beskoke software add to your exit value?</h4>
+                      <p>If you’re a Managing Director or Senior Manager preparing your business for exit, you know that incr...</p>
+                      <div class="read-more">Read More</div>
+                      <div class="author">
+                        <img src="img/news-pics/netmatters-ltd-VXAv.webp" alt="netmatters-logo">
+                        <div class="posted-by">
+                          <strong>Posted By Netmatters</strong><br>
+                          27th June 2025
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="article">
+                  <a href="#">
+                    <div class="img-container">
+                      <a href="#" class="category">Insights</a>
+                      <img src="img/news-pics/how-can-ai-L9M0.webp" alt="AI integration for Businesses">
+                    </div>
+                    <div class="article-details">
+                      <h4>How can AI benefit my business?</h4>
+                      <p>The idea of integrating AI into your business operations may seem daunting, but there are undeniable...</p>
+                      <div class="read-more">Read More</div>
+                      <div class="author">
+                        <img src="img/news-pics/netmatters-ltd-VXAv.webp" alt="netmatters-logo">
+                        <div class="posted-by">
+                          <strong>Posted By Netmatters</strong><br>
+                          26th June 2025
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              <div id="article-3" class="article">
+                <a href="#">
+                  <div class="img-container">
+                    <a href="#" class="category">careers</a>
+                    <img src="img/news-pics/1st-line-technician-1QNr.png" alt="We are Hiring 1st Line Technician">
+                  </div>
+                  <div class="article-details">
+                    <h4>1st Line Technician</h4>
+                    <p>Salary Range £25,000 -£29,000 + Pension Hours 40 hours per week, Monday - Friday Location Wymondham,...</p>
+                    <div class="read-more">Read More</div>
+                    <div class="author">
+                      <img src="img/news-pics/bethany-shakespeare-F6Iu.webp" alt="netmatters-logo">
+                      <div class="posted-by">
+                        <strong id="author">Posted By Bethany Shakespeare</strong><br>
+                        20th June 2025
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <h1><a href="#">View All</a><i class="fa-solid fa-arrow-right"></i></h1>
+          </div>
+        </div>
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="js/slick/slick.min.js"></script>
+        <script src="js/animsition/jquery.animsition.min.js"></script>
+        <script src="js/sticky/jquery.sticky.js"></script>
+      </main>
+      <div class="clients">
+        <div class="clients-row">
+          <div class="item">
+            <img class="client" src="img/clients/ashcroftlogo_landscape_goldblack_DP60P-small.webp" alt="">
+            <div class="tooltip">
+              <div class="description">
+                <h3>Ashcroft Partnership LLP</h3>
+                <p> 
+                  Originally founded in 2006 as Ashcroft Anthony, they became Ashcroft Partnership LLP in 2020 and are one of the top chartered accountancy firms in Cambridge, advising entrepreneurs and families.
+                </p>
+                <a href="#" class="client-btn">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
+                <div class="arrow"></div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img class="client" src="img/clients/beat_logo.webp" alt="">
+            <div class="tooltip">
+              <div class="description">
+                <h3>Ashcroft Partnership LLP</h3>
+                <p> 
+                  Originally founded in 2006 as Ashcroft Anthony, they became Ashcroft Partnership LLP in 2020 and are one of the top chartered accountancy firms in Cambridge, advising entrepreneurs and families.
+                </p>
+                <a href="#">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
+                <div class="arrow"></div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img class="client" src="img/clients/black_swan_logo.webp" alt="">
+            <div class="tooltip">
+              <div class="description">
+                <h3>Ashcroft Partnership LLP</h3>
+                <p> 
+                  Originally founded in 2006 as Ashcroft Anthony, they became Ashcroft Partnership LLP in 2020 and are one of the top chartered accountancy firms in Cambridge, advising entrepreneurs and families.
+                </p>
+                <a href="#">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
+                <div class="arrow"></div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img class="client" src="img/clients/busseys_logo.webp" alt="">
+            <div class="tooltip">
+              <div class="description">
+                <h3>Ashcroft Partnership LLP</h3>
+                <p> 
+                  Originally founded in 2006 as Ashcroft Anthony, they became Ashcroft Partnership LLP in 2020 and are one of the top chartered accountancy firms in Cambridge, advising entrepreneurs and families.
+                </p>
+                <a href="#">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
+                <div class="arrow"></div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img class="client" src="img/clients/crane_logo.webp" alt="">
+            <div class="tooltip">
+              <div class="description">
+                <h3>Ashcroft Partnership LLP</h3>
+                <p> 
+                  Originally founded in 2006 as Ashcroft Anthony, they became Ashcroft Partnership LLP in 2020 and are one of the top chartered accountancy firms in Cambridge, advising entrepreneurs and families.
+                </p>
+                <a href="#">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
+                <div class="arrow"></div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img class="client" src="img/clients/girl_guides_anglia.webp" alt="">
+            <div class="tooltip">
+              <div class="description">
+                <h3>Ashcroft Partnership LLP</h3>
+                <p> 
+                  Originally founded in 2006 as Ashcroft Anthony, they became Ashcroft Partnership LLP in 2020 and are one of the top chartered accountancy firms in Cambridge, advising entrepreneurs and families.
+                </p>
+                <a href="#">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
+                <div class="arrow"></div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img class="client" src="img/clients/girls_day_school_trust_logob.webp" alt="">
+            <div class="tooltip">
+              <div class="description">
+                <h3>Ashcroft Partnership LLP</h3>
+                <p> 
+                  Originally founded in 2006 as Ashcroft Anthony, they became Ashcroft Partnership LLP in 2020 and are one of the top chartered accountancy firms in Cambridge, advising entrepreneurs and families.
+                </p>
+                <a href="#">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
+                <div class="arrow"></div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img class="client" src="img/clients/howespercivallogo.webp" alt="">
+            <div class="tooltip">
+              <div class="description">
+                <h3>Ashcroft Partnership LLP</h3>
+                <p> 
+                  Originally founded in 2006 as Ashcroft Anthony, they became Ashcroft Partnership LLP in 2020 and are one of the top chartered accountancy firms in Cambridge, advising entrepreneurs and families.
+                </p>
+                <a href="#">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
+                <div class="arrow"></div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img class="client" src="img/clients/onetravellerlogo_white_figuire.webp" alt="">
+            <div class="tooltip">
+              <div class="description">
+                <h3>Ashcroft Partnership LLP</h3>
+                <p> 
+                  Originally founded in 2006 as Ashcroft Anthony, they became Ashcroft Partnership LLP in 2020 and are one of the top chartered accountancy firms in Cambridge, advising entrepreneurs and families.
+                </p>
+                <a href="#">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
+                <div class="arrow"></div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img class="client" src="img/clients/searles_logo.webp" alt="">
+            <div class="tooltip">
+              <div class="description">
+                <h3>Ashcroft Partnership LLP</h3>
+                <p> 
+                  Originally founded in 2006 as Ashcroft Anthony, they became Ashcroft Partnership LLP in 2020 and are one of the top chartered accountancy firms in Cambridge, advising entrepreneurs and families.
+                </p>
+                <a href="#">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
+                <div class="arrow"></div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img class="client" src="img/clients/survey_solutions_logo.webp" alt="">
+            <div class="tooltip">
+              <div class="description">
+                <h3>Ashcroft Partnership LLP</h3>
+                <p> 
+                  Originally founded in 2006 as Ashcroft Anthony, they became Ashcroft Partnership LLP in 2020 and are one of the top chartered accountancy firms in Cambridge, advising entrepreneurs and families.
+                </p>
+                <a href="#">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
+                <div class="arrow"></div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img class="client" src="img/clients/sweetzy_logo.webp" alt="">
+            <div class="tooltip">
+              <div class="description">
+                <h3>Ashcroft Partnership LLP</h3>
+                <p> 
+                  Originally founded in 2006 as Ashcroft Anthony, they became Ashcroft Partnership LLP in 2020 and are one of the top chartered accountancy firms in Cambridge, advising entrepreneurs and families.
+                </p>
+                <a href="#">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
+                <div class="arrow"></div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img class="client" src="img/clients/xupes_logo.webp" alt="">
+            <div class="tooltip">
+              <div class="description">
+                <h3>Ashcroft Partnership LLP</h3>
+                <p> 
+                  Originally founded in 2006 as Ashcroft Anthony, they became Ashcroft Partnership LLP in 2020 and are one of the top chartered accountancy firms in Cambridge, advising entrepreneurs and families.
+                </p>
+                <a href="#">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
+                <div class="arrow"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <footer>
+        <div class="container">
+          <div class="footer-row">
+            
+            <div class="footer-menu" id="logos">
+              <img id="footer-logo" src="img/nm-logo-white-med.webp" alt="netmatters logo">
+              <h4>FOLLOW US ON:</h4>
+              <div class="socials-grid">
+                <a id="facebook" href="#"><span class="social-icon"><i class="fa-brands fa-facebook-f"></i></span></a>
+                <a id="linkedin" href="#"><span class="social-icon"><i class="fa-brands fa-linkedin-in"></i></span></a>
+                <a id="twitter" href="#"><span class="social-icon"><i class="fa-brands fa-x-twitter"></i></span></a>
+                <a id="instagram" href="#"><span class="social-icon"><i class="fa-brands fa-instagram"></i></span></a>
+              </div>
+            </div>
+
+            <div class="menus">
+              <div class="footer-menu">
+                <h4>About Netmatters</h4>
+                <ul>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Our Careers</a></li>
+                  <li><a href="#">Our Team</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Cookie Policy</a></li>
+                  <li><a href="#">Data Retention</a></li>
+                  <li><a href="#">CCTV Policy</a></li>
+                  <li><a href="#">Environmental Policy</a></li>
+                  <li><a href="#">Sexual Harassment Policy</a></li>
+                  <li><a href="#">Modern Slavery Statement</a></li>
+                  <li><a href="#">Terms & Conditions</a></li>
+                </ul> 
+              </div>
+
+              <div class="footer-menu">
+                <h4>Our Services</h4>
+                <ul>
+                  <li><a href="#">Bespoke Software</a></li>
+                  <li><a href="#">IT Support</a></li>
+                  <li><a href="#">Digital Marketing</a></li>
+                  <li><a href="#">Telecoms Services</a></li>
+                  <li><a href="#">Web Design</a></li>
+                  <li><a href="#">Cyber Security</a></li>
+                  <li><a href="#">Developer Training</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-menu">
+                <h4>Our Industries</h4>
+                <ul>
+                  <li><a href="#">Financial Services</a></li>
+                  <li><a href="#">Construction</a></li>
+                  <li><a href="#">Retail & E-Commerce</a></li>
+                  <li><a href="#">Non-Profits</a></li>
+                  <li><a href="#">SME's</a></li>
+                  <li><a href="#">Healthcare</a></li>
+                  <li><a href="#">Education & Training</a></li>
+                  <li><a href="#">Travel & Leisure</a></li>
+                  <li><a href="#">Manufacturing & Offshore</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-menu">
+                <h4>Locations</h4>
+                <ul>
+                  <li><a href="#">Cambridge Office</a></li>
+                  <li><a href="#">Wymondham Office</a></li>
+                  <li><a href="#">Great Yarmouth Office</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <div class="details container">
+            <p style="margin-right: 5px">&copy; Copyright Netmatters 2025.</p>
+            <p style="margin-right: 5px">All rights reserved. </p>
+            <p>
+              <p id="visible-xs">-</p>
+              <a href="#">
+              Sitemap
+              </a>
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
     <div class="sidebar">
       <div class="visible">
@@ -198,481 +771,10 @@
         </ul>
       </div>
     </div>
-
-    <main>
-      <div class="services">
-        <div class="container">
-          <div class="service-header clearfix">
-            <h2>Our Services</h1>
-            <h1><a href="#">View Our Work<em class="fa-solid fa-arrow-right"></em></a></h1>
-          </div>
-          <div class="service-grid">
-            <div class="service-grid-1">
-              <a href="#">
-                <div id="cd-service">
-                  <span class="icon">
-                    <i class="fa-solid fa-user-gear"></i>
-                  </span>
-                  <h2>Consultancy & Development</h2>
-                  <p>Bespoke software solutions & consultancy for all your business needs including integrations and reporting.</p>
-                  <button>Read More</button>
-                </div>
-              </a>
-              <a href="#">
-                <div id="it-service">
-                  <span class="icon">
-                    <i class="fa-solid fa-display"></i>
-                  </span>
-                  <h2>IT Support</h2>
-                  <p>Fully managed IT support and consultancy packages tailored to meet your exact business needs.</p>
-                  <button>Read More</button>
-                </div>
-              </a>
-              <a href="#">
-                <div id="dm-service">
-                  <span class="icon">
-                    <i class="fa-solid fa-chart-simple"></i>
-                  </span>
-                  <h2>Digital Marketing</h2>
-                  <p>Driven brand awareness & ROI through creative digital marketing campaigns.</p>
-                  <button>Read More</button>
-                </div>
-              </a>
-            </div>
-            <div class="service-grid-2">
-              <a href="#">
-                <div id="ts-service">
-                  <span class="icon">
-                    <i class="fa-solid fa-phone-volume"></i>
-                  </span>
-                  <h2>Telecoms Services</h2>
-                  <p>Business telephony solutions including mobile & connectivity solutions.</p>
-                  <button id="telecoms">Read More</button>
-                </div>
-              </a>
-              <a href="#">
-                <div id="wd-service">
-                  <span class="icon">
-                    <i class="fa-solid fa-code"></i>
-                  </span>
-                  <h2>Web Design</h2>
-                  <p>User-centric design for businesses looking to make a lasting impression.</p>
-                  <button id="web-dev">Read More</button>
-                </div>
-              </a>
-              <a href="#">
-                <div id="cs-service">
-                  <span class="icon">
-                    <i class="fa-solid fa-shield-halved"></i>
-                  </span>
-                  <h2>Cyber Security</h2>
-                  <p>Prevention, testing, consultancy & breach management services.</p>
-                  <button id="cyber-sec">Read More</button>
-                </div>
-              </a>
-              <a href="#">
-                <div id="dev-service">
-                  <span class="icon">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                  </span>
-                  <h2>Developer Course</h2>
-                  <p>Web design & software training courses designed to secure a job in tech.</p>
-                  <button id="dev-course">Read More</button>
-                </div>
-              </a>
-            </div>
-          </div>
-          <h1><a href="#">View Our Work<i class="fa-solid fa-arrow-right"></i></a></h1>
-        </div>
-      </div>
-      <div class="partners">
-        <div class="partners-row">
-          <img class="partner" src="img/partners/cyber-essentials-colour.webp" alt="">
-          <img class="partner" src="img/partners/future-50.webp" alt="">
-          <img class="partner" src="img/partners/GBC-colour.webp" alt="">
-          <img class="partner" src="img/partners/google-partner.webp" alt="">
-          <img class="partner" src="img/partners/investing-in-future-growth.webp" alt="">
-          <img class="partner" src="img/partners/iso-27001.webp" alt="">
-          <img class="partner" src="img/partners/norfolk-carbon-charter.webp" alt="">
-          <img class="partner" src="img/partners/norfolk_prohelp.webp" alt="">
-          <img class="partner" src="img/partners/PPC_logo.webp" alt="">
-          <img class="partner" src="img/partners/princess-royal-training.webp" alt="">
-          <img class="partner" src="img/partners/qms.webp" alt="">
-          <img class="partner" src="img/partners/skills-of-tomorrow.webp" alt="">
-        </div>
-      </div>
-      <div class="about">
-        <div class="container">
-          <div class="about-content">
-            <div class="about-section-1 content">
-              <div class="paragraph">
-                <h2><strong>Welcome To Netmatters</strong></h2>
-                <p><strong>Netmatters is a leading Bespoke Software, IT Support, and Digital Marketing company based in the East of England with offices in Cambridge, Wymondham, and Great Yarmouth.</strong></p>
-                <p>We aren't tied into contracts with third-party providers, so you know that our recommendations for your business are based purely with one benefit in mind: to help improve your business with the most appropriate solutions.</p>
-                <p>We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.</p>
-              </div>
-              <div class="btn-layout">
-                <button><a href="#">Why Choose us?<i class="fa-solid fa-arrow-right"></i></a></button>
-                <button><a href="#">Our Culture<i class="fa-solid fa-arrow-right"></i></a></button>
-              </div>
-            </div>
-            <div class="about-section-2 content">
-              <div class="paragraph">
-                <h2><strong>What Our Clients Think</strong></h2>
-                <div class="rating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <p><em>Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!</em></p>
-                <p id="quote">Eleanor bishop, Head of Marketing - <a href="#">Ashcroft Partnership LLP</a></p>
-              </div>
-              <div id="google-trust" class="btn-layout">
-                <button id="g-reviews"><a href="#">Google Reviews<i class="fa-solid fa-arrow-right"></i></a></button>
-                <button id="t-reviews"><a href="#">Trustpilot Reviews<i class="fa-solid fa-arrow-right"></i></a></button>
-              </div>
-            </div>       
-          </div>
-        </div>
-      </div>
-      <div class="news">
-        <div class="container">
-          <div class="news-head">
-            <h2>Latest News</h1>
-            <h1><a href="#">View All</a><i class="fa-solid fa-arrow-right"></i></h1>
-          </div>
-          <div class="articles">
-              <div class="article">
-                <a href="#">
-                  <div class="img-container">
-                    <a href="#" class="category">Insights</a>
-                    <img src="img/news-pics/how-much-could-vKZG.webp" alt="Bespoke Software">
-                  </div>
-                  <div class="article-details">
-                    <h4>How much could beskoke software add to your exit value?</h4>
-                    <p>If you’re a Managing Director or Senior Manager preparing your business for exit, you know that incr...</p>
-                    <div class="read-more">Read More</div>
-                    <div class="author">
-                      <img src="img/news-pics/netmatters-ltd-VXAv.webp" alt="netmatters-logo">
-                      <div class="posted-by">
-                        <strong>Posted By Netmatters</strong><br>
-                        27th June 2025
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="article">
-                <a href="#">
-                  <div class="img-container">
-                    <a href="#" class="category">Insights</a>
-                    <img src="img/news-pics/how-can-ai-L9M0.webp" alt="AI integration for Businesses">
-                  </div>
-                  <div class="article-details">
-                    <h4>How can AI benefit my business?</h4>
-                    <p>The idea of integrating AI into your business operations may seem daunting, but there are undeniable...</p>
-                    <div class="read-more">Read More</div>
-                    <div class="author">
-                      <img src="img/news-pics/netmatters-ltd-VXAv.webp" alt="netmatters-logo">
-                      <div class="posted-by">
-                        <strong>Posted By Netmatters</strong><br>
-                        26th June 2025
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            <div id="article-3" class="article">
-              <a href="#">
-                <div class="img-container">
-                  <a href="#" class="category">careers</a>
-                  <img src="img/news-pics/1st-line-technician-1QNr.png" alt="We are Hiring 1st Line Technician">
-                </div>
-                <div class="article-details">
-                  <h4>1st Line Technician</h4>
-                  <p>Salary Range £25,000 -£29,000 + Pension Hours 40 hours per week, Monday - Friday Location Wymondham,...</p>
-                  <div class="read-more">Read More</div>
-                  <div class="author">
-                    <img src="img/news-pics/bethany-shakespeare-F6Iu.webp" alt="netmatters-logo">
-                    <div class="posted-by">
-                      <strong id="author">Posted By Bethany Shakespeare</strong><br>
-                      20th June 2025
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <h1><a href="#">View All</a><i class="fa-solid fa-arrow-right"></i></h1>
-        </div>
-      </div>
-    </main>
-    <div class="clients">
-      <div class="clients-row">
-        <div class="item">
-          <img class="client" src="img/clients/ashcroftlogo_landscape_goldblack_DP60P-small.webp" alt="">
-          <div class="tooltip">
-            <div class="description">
-              <h3>Ashcroft Partnership LLP</h3>
-              <p> 
-                Originally founded in 2006 as Ashcroft Anthony, they became Ashcroft Partnership LLP in 2020 and are one of the top chartered accountancy firms in Cambridge, advising entrepreneurs and families.
-              </p>
-              <a href="#" class="client-btn">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
-              <div class="arrow"></div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="client" src="img/clients/beat_logo.webp" alt="">
-          <div class="tooltip">
-            <div class="description">
-              <h3>Ashcroft Partnership LLP</h3>
-              <p> 
-                Originally founded in 2006 as Ashcroft Anthony, they became Ashcroft Partnership LLP in 2020 and are one of the top chartered accountancy firms in Cambridge, advising entrepreneurs and families.
-              </p>
-              <a href="#">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
-              <div class="arrow"></div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="client" src="img/clients/black_swan_logo.webp" alt="">
-          <div class="tooltip">
-            <div class="description">
-              <h3>Ashcroft Partnership LLP</h3>
-              <p> 
-                Originally founded in 2006 as Ashcroft Anthony, they became Ashcroft Partnership LLP in 2020 and are one of the top chartered accountancy firms in Cambridge, advising entrepreneurs and families.
-              </p>
-              <a href="#">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
-              <div class="arrow"></div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="client" src="img/clients/busseys_logo.webp" alt="">
-          <div class="tooltip">
-            <div class="description">
-              <h3>Ashcroft Partnership LLP</h3>
-              <p> 
-                Originally founded in 2006 as Ashcroft Anthony, they became Ashcroft Partnership LLP in 2020 and are one of the top chartered accountancy firms in Cambridge, advising entrepreneurs and families.
-              </p>
-              <a href="#">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
-              <div class="arrow"></div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="client" src="img/clients/crane_logo.webp" alt="">
-          <div class="tooltip">
-            <div class="description">
-              <h3>Ashcroft Partnership LLP</h3>
-              <p> 
-                Originally founded in 2006 as Ashcroft Anthony, they became Ashcroft Partnership LLP in 2020 and are one of the top chartered accountancy firms in Cambridge, advising entrepreneurs and families.
-              </p>
-              <a href="#">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
-              <div class="arrow"></div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="client" src="img/clients/girl_guides_anglia.webp" alt="">
-          <div class="tooltip">
-            <div class="description">
-              <h3>Ashcroft Partnership LLP</h3>
-              <p> 
-                Originally founded in 2006 as Ashcroft Anthony, they became Ashcroft Partnership LLP in 2020 and are one of the top chartered accountancy firms in Cambridge, advising entrepreneurs and families.
-              </p>
-              <a href="#">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
-              <div class="arrow"></div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="client" src="img/clients/girls_day_school_trust_logob.webp" alt="">
-          <div class="tooltip">
-            <div class="description">
-              <h3>Ashcroft Partnership LLP</h3>
-              <p> 
-                Originally founded in 2006 as Ashcroft Anthony, they became Ashcroft Partnership LLP in 2020 and are one of the top chartered accountancy firms in Cambridge, advising entrepreneurs and families.
-              </p>
-              <a href="#">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
-              <div class="arrow"></div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="client" src="img/clients/howespercivallogo.webp" alt="">
-          <div class="tooltip">
-            <div class="description">
-              <h3>Ashcroft Partnership LLP</h3>
-              <p> 
-                Originally founded in 2006 as Ashcroft Anthony, they became Ashcroft Partnership LLP in 2020 and are one of the top chartered accountancy firms in Cambridge, advising entrepreneurs and families.
-              </p>
-              <a href="#">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
-              <div class="arrow"></div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="client" src="img/clients/onetravellerlogo_white_figuire.webp" alt="">
-          <div class="tooltip">
-            <div class="description">
-              <h3>Ashcroft Partnership LLP</h3>
-              <p> 
-                Originally founded in 2006 as Ashcroft Anthony, they became Ashcroft Partnership LLP in 2020 and are one of the top chartered accountancy firms in Cambridge, advising entrepreneurs and families.
-              </p>
-              <a href="#">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
-              <div class="arrow"></div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="client" src="img/clients/searles_logo.webp" alt="">
-          <div class="tooltip">
-            <div class="description">
-              <h3>Ashcroft Partnership LLP</h3>
-              <p> 
-                Originally founded in 2006 as Ashcroft Anthony, they became Ashcroft Partnership LLP in 2020 and are one of the top chartered accountancy firms in Cambridge, advising entrepreneurs and families.
-              </p>
-              <a href="#">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
-              <div class="arrow"></div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="client" src="img/clients/survey_solutions_logo.webp" alt="">
-          <div class="tooltip">
-            <div class="description">
-              <h3>Ashcroft Partnership LLP</h3>
-              <p> 
-                Originally founded in 2006 as Ashcroft Anthony, they became Ashcroft Partnership LLP in 2020 and are one of the top chartered accountancy firms in Cambridge, advising entrepreneurs and families.
-              </p>
-              <a href="#">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
-              <div class="arrow"></div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="client" src="img/clients/sweetzy_logo.webp" alt="">
-          <div class="tooltip">
-            <div class="description">
-              <h3>Ashcroft Partnership LLP</h3>
-              <p> 
-                Originally founded in 2006 as Ashcroft Anthony, they became Ashcroft Partnership LLP in 2020 and are one of the top chartered accountancy firms in Cambridge, advising entrepreneurs and families.
-              </p>
-              <a href="#">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
-              <div class="arrow"></div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="client" src="img/clients/xupes_logo.webp" alt="">
-          <div class="tooltip">
-            <div class="description">
-              <h3>Ashcroft Partnership LLP</h3>
-              <p> 
-                Originally founded in 2006 as Ashcroft Anthony, they became Ashcroft Partnership LLP in 2020 and are one of the top chartered accountancy firms in Cambridge, advising entrepreneurs and families.
-              </p>
-              <a href="#">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
-              <div class="arrow"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer>
-      <div class="container">
-        <div class="footer-row">
-          
-          <div class="footer-menu" id="logos">
-            <img id="footer-logo" src="img/nm-logo-white-med.webp" alt="netmatters logo">
-            <h4>FOLLOW US ON:</h4>
-            <div class="socials-grid">
-              <a id="facebook" href="#"><span class="social-icon"><i class="fa-brands fa-facebook-f"></i></span></a>
-              <a id="linkedin" href="#"><span class="social-icon"><i class="fa-brands fa-linkedin-in"></i></span></a>
-              <a id="twitter" href="#"><span class="social-icon"><i class="fa-brands fa-x-twitter"></i></span></a>
-              <a id="instagram" href="#"><span class="social-icon"><i class="fa-brands fa-instagram"></i></span></a>
-            </div>
-          </div>
-
-          <div class="menus">
-            <div class="footer-menu">
-              <h4>About Netmatters</h4>
-              <ul>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Our Careers</a></li>
-                <li><a href="#">Our Team</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Cookie Policy</a></li>
-                <li><a href="#">Data Retention</a></li>
-                <li><a href="#">CCTV Policy</a></li>
-                <li><a href="#">Environmental Policy</a></li>
-                <li><a href="#">Sexual Harassment Policy</a></li>
-                <li><a href="#">Modern Slavery Statement</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-              </ul> 
-            </div>
-
-            <div class="footer-menu">
-              <h4>Our Services</h4>
-              <ul>
-                <li><a href="#">Bespoke Software</a></li>
-                <li><a href="#">IT Support</a></li>
-                <li><a href="#">Digital Marketing</a></li>
-                <li><a href="#">Telecoms Services</a></li>
-                <li><a href="#">Web Design</a></li>
-                <li><a href="#">Cyber Security</a></li>
-                <li><a href="#">Developer Training</a></li>
-              </ul>
-            </div>
-
-            <div class="footer-menu">
-              <h4>Our Industries</h4>
-              <ul>
-                <li><a href="#">Financial Services</a></li>
-                <li><a href="#">Construction</a></li>
-                <li><a href="#">Retail & E-Commerce</a></li>
-                <li><a href="#">Non-Profits</a></li>
-                <li><a href="#">SME's</a></li>
-                <li><a href="#">Healthcare</a></li>
-                <li><a href="#">Education & Training</a></li>
-                <li><a href="#">Travel & Leisure</a></li>
-                <li><a href="#">Manufacturing & Offshore</a></li>
-              </ul>
-            </div>
-
-            <div class="footer-menu">
-              <h4>Locations</h4>
-              <ul>
-                <li><a href="#">Cambridge Office</a></li>
-                <li><a href="#">Wymondham Office</a></li>
-                <li><a href="#">Great Yarmouth Office</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="copyright">
-        <div class="details container">
-          <p style="margin-right: 5px">&copy; Copyright Netmatters 2025.</p>
-          <p style="margin-right: 5px">All rights reserved. </p>
-          <p>
-            <p id="visible-xs">-</p>
-            <a href="#">
-            Sitemap
-            </a>
-          </p>
-        </div>
-      </div>
-    </footer>
-
     <script src="js/jquery-1.11.2.min.js"></script>
-    <script src="js/slick/slick.min.js"></script>
     <script src="js/animsition/jquery.animsition.min.js"></script>
     <script src="js/sticky/jquery.sticky.js"></script>
+    <script src="js/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

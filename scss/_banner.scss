@@ -1,83 +1,207 @@
 .banner {
-  background-image: linear-gradient(270deg, transparent 25%, #000), url(../img/home-YLei.webp);
-  background-size: cover;
-  background-position: center;
-  height: 550px;
 
-  .banner-text {
-    position: relative;
-    text-align: center;
-    vertical-align: top;
-    color: white;
-    top:100px;
+  .banner-carousel {
 
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 600;
-      line-height: 3rem;
-      margin: 0;
-    }
+    .banner-item {
+      position: relative;
+      background-color: #000;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 550px;
 
-    p {
-      font-size: 1.25rem;
-      font-weight: 600;
-      line-height: 1.75rem;
-    }
-    
-    i {
-      margin-left: 5px;
-    }
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: linear-gradient(270deg,transparent 25%,#000);
+        z-index: 3;
 
-
-    @media (min-width: $bkpoint-md) {
-      top: 60px;
-      h1 {
-        font-size: 4rem;
-        line-height: 5rem;
-        //width: 80%;
-        margin-bottom: 20px;
+        @media (max-width: 992px) {
+          background: linear-gradient(270deg,transparent 100%,#000);
+        }
       }
-      text-align: left;
-      p {
-        margin-bottom: 0.375rem;
-        //width: 70%;
-        font-size: 1.625rem;
-        line-height: 2.5rem;
-      }
-    }
 
-    @media (max-width: $bkpoint-sm) {
-      h1 {
-        margin: 0;
+      .banner-img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+
+        img {width: 100%; height: 100%; object-fit: cover;}
+
+        @media (max-width: 992px) {
+          opacity: .5;
+        }
       }
-      top: 120px;
+
+      .banner-content {
+        padding: 3.75rem;
+        position: relative;
+        z-index: 4;
+        margin: 0 auto;
+
+        .learn-more-1 {
+          @include banner-btn(#926FB1);
+          &:hover {
+            background-color: #7e57a0;
+            border-color: #735093;
+          }
+        }
+
+        .learn-more-2 {
+          @include banner-btn(#f7b322);
+          &:hover {
+            background-color: #e8a008;
+            border-color: #e8a008;
+          }
+        }
+
+        .learn-more-3 {
+          @include banner-btn(#4183d7);
+          &:hover {
+            background-color: #2a6ec6;
+            border-color: #2a6ec6;
+          }
+        }
+
+        .learn-more-4 {
+          @include banner-btn(#2ecc71);
+          &:hover {
+            background-color: #26ab5f;
+            border-color: #26ab5f;
+          }
+        }
+
+        .learn-more-5 {
+          @include banner-btn(#d64541);
+          &:hover {
+            background-color: #c42e2a;
+            border-color: #c42e2a;
+          }
+        }
+
+        .learn-more-6 {
+          @include banner-btn(#926FB1);
+          &:hover {
+            background-color: #7e57a0;
+            border-color: #735093;
+          }
+        }
+
+        .learn-more-7 {
+          @include banner-btn(#f62459);
+          &:hover {
+            background-color: #e80a42;
+            border-color: #e80a42;
+          }
+        }
+
+        .banner-text {
+          text-align: center;
+          vertical-align: top;
+          color: white;
+          margin: auto 0;
+          top:100px;
+
+          h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            line-height: 3rem;
+            margin: 0;
+          }
+
+          p {
+            font-size: 1.25rem;
+            font-weight: 600;
+            line-height: 1.75rem;
+          }
+          
+          i {
+            margin-left: 5px;
+          }
+
+
+          @media (min-width: $bkpoint-md) {
+            top: 60px;
+            h1 {
+              font-size: 4rem;
+              line-height: 5rem;
+              //width: 80%;
+              margin-bottom: 20px;
+            }
+            text-align: left;
+            p {
+              margin-bottom: 0.375rem;
+              //width: 70%;
+              font-size: 1.625rem;
+              line-height: 2.5rem;
+            }
+          }
+
+          @media (max-width: $bkpoint-sm) {
+            h1 {
+              margin: 0;
+            }
+            top: 120px;
+          }
+        }
+      }
     }
   }
 
-  button{
-    @include btn(#926FB1);
-    &:hover {
-      background-color: #7e57a0;
-      border-color: #735093;
-    }
-    font-size: 1.25rem;
-    margin-top: 1.938rem;
-    margin-bottom: 1.125rem;
+  .slick-dots {
+    bottom: 20px;
 
-    a>i {
-      margin-left: 12px;
+    .slick-active {
+
+      button {
+        line-height: 8px;
+        display: block;
+        background-color: #fff;
+        width: 11px;
+        height: 11px;
+        border-radius: 30px;
+        top: 10px;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: -7.5px;
+          left: -7px;
+          width: 21px;
+          height: 21px;
+          border: 2px solid #fff;
+          border-radius: 50%;
+        }
+      }
     }
-    padding: 5px 20px;
-    line-height: 50px;
+
+    li>button::before {
+      background-color: rgba(255,255,255,0.5);
+      display: block;
+      border-radius: 30px;
+      width: 11px;
+      height: 11px;
+      font-size: 0;
+      opacity: 1;
+    }
+
+    li>button:hover::before {
+      background-color: #869791;
+    }
   }
 
   @media screen and (max-width: $bkpoint-sm) {
     margin-top: -25px;
-  }
-}
-
-.container {
-  @media screen and (min-width: $bkpoint-lg) {
-    width: 1200px;
   }
 }

@@ -18,6 +18,20 @@
   }
 }
 
+@mixin banner-btn($color) {
+  @include btn($color);
+  background-color: $color;
+  font-size: 1.25rem;
+
+  a>i {
+    margin-left: 12px;
+  }
+  padding: 5px 20px;
+  line-height: 50px;
+  margin-top: 1.938rem;
+  margin-bottom: 1.125rem;
+}
+
 @mixin service-item($color) {
   display: flex;
   flex-direction: column;

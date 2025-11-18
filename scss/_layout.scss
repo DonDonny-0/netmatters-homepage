@@ -3,6 +3,37 @@ body {
   height: 100%;
   letter-spacing: .4px;
   color: #666;
+
+  #container {
+    overflow: hidden;
+    background-color: #fff;
+    position: relative;
+    z-index: 10;
+    transform: all .5s;
+    left: 0;
+
+    &::after {
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+    }
+
+    &.active {
+      cursor: pointer;
+
+      &::after {
+        content: "";
+        position: absolute;
+        background: rgba(0,0,0,.4);
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+  
 }
 
 * {
@@ -26,5 +57,5 @@ body {
   @media (min-width: $bkpoint-lg) {
     width: 1200px;
   }
-  
+
 }
