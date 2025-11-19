@@ -16,161 +16,189 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="container">
-      <header>
-        <div class="header-bar">
-          <div class="container">
-            <div class="header-items">
-              <div class="header-left">
-                <a href="#"><img src="img/f-logo.webp" alt=""></a>
+    <div class="cookies">
+      <button class="manage-consent">Manage Consent</button>
+      <div class="cookie-textbox">
+        <div class="cookie-content">
+          <div class="cookie-title">
+            <h3>Cookies Policy</h3>
+          </div>
+          <div class="cookie-text">
+            <p>
+              Our website uses cookies. This helps us provide you with a good experience on our website. To see what cookies we use and what they do, and to opt-in on non-essential cookies click "change settings". For a detailed explanation, click on "<a href="#">Privacy Policy</a>" otherwise click "Accept Cookies" to enter.
+            </p>
+          </div>
+          <div class="cookie-buttons">
+            <div class="row">
+              <div class="cookie-settings">
+                <a href="#">Change Settings</a>
               </div>
-              <div class="header-right">
-                <a href="#"><button id="support-btn"><i class="fa-solid fa-computer-mouse"></i>support</button></a>
-                <a href="#"><button id="contact-btn"><i class="fa-solid fa-paper-plane"></i>Contact</button></a>
-                <form action="#">
-                  <input type="text" id="search-box" name="search" placeholder="Search..." value>
-                  <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
-                <button id="hamburger"><i class="fa-solid fa-bars"></i></button>
-                <button id="contact-sm">
-                  <i class="fa-solid fa-phone-volume"></i>
-                </button>
+              <div class="accept">
+                <a href="#">Accept cookies</a>
               </div>
             </div>
-            <form action="#" class="search-sm">
-              <input type="text" id="search-box-sm" name="search-sm" placeholder="Search..." value>
-              <button id="search-btn-sm"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
           </div>
         </div>
-      </header>
-      <div class="nav-bar">
-        <div class="container">
-          <ul class="navigation">
-            <li class="nav-item" id="c-and-d-nav">
-              <a id="main-nav" href="#">
-                <i class="fa-solid fa-user-gear"></i><br>
-                <small>Consultancy</small><br> & Development
-              </a>
-              <div>
-                <ul class="container">
-                  <li><h1>Our Consultancy & Development Services</h1></li><br>
-                  <li><h2><a href="#"><i class="fa-solid fa-gears"></i>Bespoke CRM</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-solid fa-briefcase"></i>Business Automation</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-solid fa-arrow-up-from-bracket"></i>Software Integration</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-solid fa-mobile-screen"></i>Mobile App Development</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-regular fa-folder-open"></i>Bespoke Databases</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-regular fa-share-from-square"></i>Sharepoint Development</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-solid fa-download"></i>Operational Systems</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-solid fa-user-group"></i>Business Central Implementation</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-solid fa-laptop"></i>Internet of Things (IoT) Software</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-solid fa-cloud"></i>Intranet Development</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-solid fa-cloud-arrow-down"></i>Customer Portal Development</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-solid fa-earth-americas"></i>Reporting Hub</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-regular fa-handshake"></i>SAP S/4HANA Management</a></h2></li>
-                </ul>
+      </div>
+    </div>
+    <div id="container">
+      <div id="open-sidebar"></div>
+      <div class="sticky-header">
+        <header>
+          <div class="header-bar">
+            <div class="container">
+              <div class="header-items">
+                <div class="header-left">
+                  <a href="#"><img src="img/f-logo.webp" alt=""></a>
+                </div>
+                <div class="header-right">
+                  <a href="#"><button id="support-btn"><i class="fa-solid fa-computer-mouse"></i>support</button></a>
+                  <a href="#"><button id="contact-btn"><i class="fa-solid fa-paper-plane"></i>Contact</button></a>
+                  <form action="#">
+                    <input type="text" id="search-box" name="search" placeholder="Search..." value>
+                    <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                  </form>
+                  <button id="hamburger"><i class="fa-solid fa-bars"></i></button>
+                  <button id="contact-sm">
+                    <i class="fa-solid fa-phone-volume"></i>
+                  </button>
+                </div>
               </div>
-            </li>
-            <li class="nav-item" id="it-nav">
-              <a id="main-nav" href="#">
-                <i class="fa-solid fa-display"></i><br>
-                <small>IT</small><br>Support</a>
-              <div>
-                <ul class="container">
-                  <li><h1>Our IT Support Services</h1></li><br>
-                  <li><h2><a href="#"><i class="fa-regular fa-headphones"></i>Managed IT Support</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-solid fa-briefcase"></i>Business IT Support</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-solid fa-laptop"></i>Office 365 for Business</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-solid fa-graduation-cap"></i>IT Consultancy</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-solid fa-cloud"></i>Cloud Service Provider</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-solid fa-server"></i>Data Backup & Disaster Recovery</a></h2></li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item" id="dm-nav">
-              <a id="main-nav" href="#">
-                <i class="fa-solid fa-chart-simple"></i><br>
-                <small>Digital</small><br>Marketing
-              </a>
-              <div>
-                <ul class="container">
-                  <li><h1>Our Digital Marketing Services</h1></li><br>
-                  <li><h2><a href="#"><i class="fa-solid fa-magnifying-glass"></i>Search Engine Optimisation (SEO)</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-solid fa-hand-holding-dollar"></i>Pay Per Click Advertising (PPC)</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-solid fa-chart-line"></i>Conversion Rate Optimisation (CRO)</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-solid fa-envelope"></i>Email Marketing</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-solid fa-user-group"></i>Social Media Marketing</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-solid fa-pencil"></i>Content Marketing</a></h2></li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item" id="ts-nav">
-              <a id="main-nav" href="#">
-                <i class="fa-solid fa-phone-volume"></i><br>
-                <small>Telecoms</small><br> Services
-              </a>
-              <div>
-                <ul class="container">
-                  <li><h1>Our Telecoms Services</h1></li><br>
-                  <li><h2><a href="#"><i class="fa-solid fa-ticket"></i>Business Mobile</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-solid fa-phone"></i>Phone Ststem Health Check</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-solid fa-square-phone"></i>Business Phone Systems</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-solid fa-gauge"></i>Business Connectivity</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-regular fa-handshake"></i>Telecoms Bill Review</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-solid fa-phone-volume"></i>3CX Systems</a></h2></li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item" id="web-dev-nav">
-              <a id="main-nav" href="#">
-                <i class="fa-solid fa-code"></i><br>
-                <small>Web</small><br> Design
-              </a>
-              <div>
-                <ul class="container">
-                  <li><h1>Our Web Design Services</h1></li><br>
-                  <li><h2><a href="#"><i class="fa-solid fa-pencil"></i>Bespoke Website Design</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-solid fa-cart-shopping"></i>eCommerce Website Design</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-solid fa-display"></i>Pay Monthly Websites</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-solid fa-bullhorn"></i>Branding & Design</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-solid fa-mobile-screen"></i>Mobile App Development</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-solid fa-cloud"></i>Web Hosting</a></h2></li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item" id="cyber-sec-nav">
-              <a id="main-nav" href="#">
-                <i class="fa-solid fa-shield-halved"></i><br>
-                <small>Cyber</small><br> Security
-              </a>
-              <div>
-                <ul class="container">
-                  <li><h1>Our Cyber Security Services</h1></li><br>
-                  <li><h2><a href="#"><i class="fa-solid fa-paste"></i>Cyber Security Assessment</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-solid fa-clock"></i>Cyber Security Management</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-solid fa-flask"></i>Cyber Penetration Testing</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-solid fa-graduation-cap"></i>Cyber Essentials Certification</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-solid fa-shield-halved"></i>PCI Compliance</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-solid fa-lock"></i>Hacking Prevention</a></h2></li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item" id="dev-course-nav">
-              <a id="main-nav" href="#">
-                <i class="fa-solid fa-graduation-cap"></i><br>
-                <small>Developer</small><br> Course
-              </a>
-              <div>
-                <ul class="container">
-                  <li><h1>Our Developer Course Services</h1></li><br>
-                  <li><h2><a href="#"><i class="fa-solid fa-laptop"></i>Train For a Career In Tech</a></h2></li>
-                  <li><h2><a href="#"><i class="fa-solid fa-code"></i>Skills Bootcamp</a></h2></li>
-                  <li><h2><a href="#"><span><i class="fa-solid fa-question"></i></span><span>Scion Scheme Frequently Asked Questions</span></a></h2></li>
-                  <li><h2><a href="#"><i class="fa-regular fa-handshake"></i>Scion collaborators</a></h2></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
+              <form action="#" class="search-sm">
+                <input type="text" id="search-box-sm" name="search-sm" placeholder="Search..." value>
+                <button id="search-btn-sm"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </form>
+            </div>
+          </div>
+        </header>
+        <div class="nav-bar">
+          <div class="container">
+            <ul class="navigation">
+              <li class="nav-item" id="c-and-d-nav">
+                <a id="main-nav" href="#">
+                  <i class="fa-solid fa-user-gear"></i><br>
+                  <small>Consultancy</small><br> & Development
+                </a>
+                <div>
+                  <ul class="container">
+                    <li><h1>Our Consultancy & Development Services</h1></li><br>
+                    <li><h2><a href="#"><i class="fa-solid fa-gears"></i>Bespoke CRM</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-solid fa-briefcase"></i>Business Automation</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-solid fa-arrow-up-from-bracket"></i>Software Integration</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-solid fa-mobile-screen"></i>Mobile App Development</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-regular fa-folder-open"></i>Bespoke Databases</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-regular fa-share-from-square"></i>Sharepoint Development</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-solid fa-download"></i>Operational Systems</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-solid fa-user-group"></i>Business Central Implementation</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-solid fa-laptop"></i>Internet of Things (IoT) Software</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-solid fa-cloud"></i>Intranet Development</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-solid fa-cloud-arrow-down"></i>Customer Portal Development</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-solid fa-earth-americas"></i>Reporting Hub</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-regular fa-handshake"></i>SAP S/4HANA Management</a></h2></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item" id="it-nav">
+                <a id="main-nav" href="#">
+                  <i class="fa-solid fa-display"></i><br>
+                  <small>IT</small><br>Support</a>
+                <div>
+                  <ul class="container">
+                    <li><h1>Our IT Support Services</h1></li><br>
+                    <li><h2><a href="#"><i class="fa-regular fa-headphones"></i>Managed IT Support</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-solid fa-briefcase"></i>Business IT Support</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-solid fa-laptop"></i>Office 365 for Business</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-solid fa-graduation-cap"></i>IT Consultancy</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-solid fa-cloud"></i>Cloud Service Provider</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-solid fa-server"></i>Data Backup & Disaster Recovery</a></h2></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item" id="dm-nav">
+                <a id="main-nav" href="#">
+                  <i class="fa-solid fa-chart-simple"></i><br>
+                  <small>Digital</small><br>Marketing
+                </a>
+                <div>
+                  <ul class="container">
+                    <li><h1>Our Digital Marketing Services</h1></li><br>
+                    <li><h2><a href="#"><i class="fa-solid fa-magnifying-glass"></i>Search Engine Optimisation (SEO)</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-solid fa-hand-holding-dollar"></i>Pay Per Click Advertising (PPC)</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-solid fa-chart-line"></i>Conversion Rate Optimisation (CRO)</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-solid fa-envelope"></i>Email Marketing</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-solid fa-user-group"></i>Social Media Marketing</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-solid fa-pencil"></i>Content Marketing</a></h2></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item" id="ts-nav">
+                <a id="main-nav" href="#">
+                  <i class="fa-solid fa-phone-volume"></i><br>
+                  <small>Telecoms</small><br> Services
+                </a>
+                <div>
+                  <ul class="container">
+                    <li><h1>Our Telecoms Services</h1></li><br>
+                    <li><h2><a href="#"><i class="fa-solid fa-ticket"></i>Business Mobile</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-solid fa-phone"></i>Phone Ststem Health Check</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-solid fa-square-phone"></i>Business Phone Systems</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-solid fa-gauge"></i>Business Connectivity</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-regular fa-handshake"></i>Telecoms Bill Review</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-solid fa-phone-volume"></i>3CX Systems</a></h2></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item" id="web-dev-nav">
+                <a id="main-nav" href="#">
+                  <i class="fa-solid fa-code"></i><br>
+                  <small>Web</small><br> Design
+                </a>
+                <div>
+                  <ul class="container">
+                    <li><h1>Our Web Design Services</h1></li><br>
+                    <li><h2><a href="#"><i class="fa-solid fa-pencil"></i>Bespoke Website Design</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-solid fa-cart-shopping"></i>eCommerce Website Design</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-solid fa-display"></i>Pay Monthly Websites</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-solid fa-bullhorn"></i>Branding & Design</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-solid fa-mobile-screen"></i>Mobile App Development</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-solid fa-cloud"></i>Web Hosting</a></h2></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item" id="cyber-sec-nav">
+                <a id="main-nav" href="#">
+                  <i class="fa-solid fa-shield-halved"></i><br>
+                  <small>Cyber</small><br> Security
+                </a>
+                <div>
+                  <ul class="container">
+                    <li><h1>Our Cyber Security Services</h1></li><br>
+                    <li><h2><a href="#"><i class="fa-solid fa-paste"></i>Cyber Security Assessment</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-solid fa-clock"></i>Cyber Security Management</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-solid fa-flask"></i>Cyber Penetration Testing</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-solid fa-graduation-cap"></i>Cyber Essentials Certification</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-solid fa-shield-halved"></i>PCI Compliance</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-solid fa-lock"></i>Hacking Prevention</a></h2></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item" id="dev-course-nav">
+                <a id="main-nav" href="#">
+                  <i class="fa-solid fa-graduation-cap"></i><br>
+                  <small>Developer</small><br> Course
+                </a>
+                <div>
+                  <ul class="container">
+                    <li><h1>Our Developer Course Services</h1></li><br>
+                    <li><h2><a href="#"><i class="fa-solid fa-laptop"></i>Train For a Career In Tech</a></h2></li>
+                    <li><h2><a href="#"><i class="fa-solid fa-code"></i>Skills Bootcamp</a></h2></li>
+                    <li><h2><a href="#"><span><i class="fa-solid fa-question"></i></span><span>Scion Scheme Frequently Asked Questions</span></a></h2></li>
+                    <li><h2><a href="#"><i class="fa-regular fa-handshake"></i>Scion collaborators</a></h2></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="banner"> 
@@ -752,24 +780,208 @@
     </div>
     <div class="sidebar">
       <div class="visible">
-        <ul>
+        <ul class="outer-nav">
           <li class="visible-xs">
             <a href="#">Contact Us</a>
+          </a>
           </li>
           <li class="consult-sb">
             <a href="#">
+              <i class="fa-solid fa-gears"></i><br>
               <small>Consultancy</small>
               &amp; Development
             </a>
+            <div class="inner-nav">
+              <ul>
+                <li><a href="#">Bespoke CRM</a></li>
+                <li><a href="#">Business Automation</a></li>
+                <li><a href="#">Software integrations</a></li>
+                <li><a href="#">mobile app development</a></li>
+                <li><a href="#">bespoke databases</a></li>
+                <li><a href="#">sharepoint development</a></li>
+                <li><a href="#">operational systems</a></li>
+                <li><a href="#">business central implementation</a></li>
+                <li><a href="#">internet of thingss (iot) software</a></li>
+                <li><a href="#">intranet development</a></li>
+                <li><a href="#">customer portal development</a></li>
+                <li><a href="#">reporting hub</a></li>
+                <li><a href="#">sap s/4hana management</a></li>
+              </ul>
+            </div>
           </li>
-          <li class="it-sb"></li>
-          <li class="digital-sb"></li>
-          <li class="telecoms-sb"></li>
-          <li class="web-dev-sb"></li>
-          <li class="security-sb"></li>
-          <li class="dev-course-sb"></li>
+          <li class="it-sb">
+            <a href="#">
+              <i class="fa-solid fa-display"></i><br>
+              <small>IT</small>
+              Support
+            </a>
+            <div class="inner-nav">
+              <ul>
+                <li><a href="#">Managed it support</a></li>
+                <li><a href="#">businessm it support</a></li>
+                <li><a href="#">office 365 for business</a></li>
+                <li><a href="#">it consultancy</a></li>
+                <li><a href="#">cloud service provider</a></li>
+                <li><a href="#">data backup & disaster recover</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="digital-sb">
+            <a href="#">
+              <i class="fa-solid fa-chart-simple"></i><br>
+              <small>Digital</small>
+              Marketing
+            </a>
+            <div class="inner-nav">
+              <ul>
+                <li><a href="#">search engine optimisation (seo)</a></li>
+                <li><a href="#">pay per click advertising (ppc)</a></li>
+                <li><a href="#">conversion rate optimisation (cro)</a></li>
+                <li><a href="#">email marketing</a></li>
+                <li><a href="#">social media content</a></li>
+                <li><a href="#">content marketing</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="telecoms-sb">
+            <a href="#">
+              <i class="fa-solid fa-phone-volume"></i><br>
+              <small>Telecoms</small>
+              Services
+            </a>
+            <div class="inner-nav">
+              <ul>
+                <li><a href="#">business mobile</a></li>
+                <li><a href="#">phone system health check</a></li>
+                <li><a href="#">business phone stsyem</a></li>
+                <li><a href="#">business connectivity</a></li>
+                <li><a href="#">telecoms bill review</a></li>
+                <li><a href="#">3cx systems</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="web-dev-sb">
+            <a href="#">
+              <i class="fa-solid fa-code"></i><br>
+              <small>Web</small>
+              Design
+            </a>
+            <div class="inner-nav">
+              <ul>
+                <li><a href="#">bespoke website design</a></li>
+                <li><a href="#">ecommerce website design</a></li>
+                <li><a href="#">pay monthly websites</a></li>
+                <li><a href="#">branding & design</a></li>
+                <li><a href="#">mobile app development</a></li>
+                <li><a href="#">web hosting</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="security-sb">
+            <a href="#">
+              <i class="fa-solid fa-shield-halved"></i><br>
+              <small>Cyber</small>
+              Security
+            </a>
+            <div class="inner-nav">
+              <ul>
+                <li><a href="#">cyber security assessment</a></li>
+                <li><a href="#">cyber security management</a></li>
+                <li><a href="#">cyber penetration testing</a></li>
+                <li><a href="#">cyber essentials Certification</a></li>
+                <li><a href="#">pci compliance</a></li>
+                <li><a href="#">hacking prevention</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="dev-course-sb">
+            <a href="#">
+              <i class="fa-solid fa-graduation-cap"></i><br>
+              <small>developer</small>
+              course
+            </a>
+            <div class="inner-nav">
+              <ul>
+                <li><a href="#">train for a career in tech</a></li>
+                <li><a href="#">skills bootcamp</a></li>
+                <li><a href="#">scion scheme frequently asked questions</a></li>
+                <li><a href="#">scions collaborators</a></li>
+              </ul>
+            </div>
+          </li>
         </ul>
       </div>
+      <ul>
+        <li>
+          <a class="main-sb-title" id="main-nav" href="#">
+            Our work
+          </a>
+          <div class="inner-nav">
+            <ul>
+              <li><a class="main-sb-nav" href="#"><i class="fa-solid fa-angles-right"></i>case studies</a></li>
+              <li><a class="main-sb-nav" href="#"><i class="fa-solid fa-angles-right"></i>our digital marketing clients</a></li>
+              <li><a class="main-sb-nav" href="#"><i class="fa-solid fa-angles-right"></i>our website clients</a></li>
+              <li><a class="main-sb-nav" href="#"><i class="fa-solid fa-angles-right"></i>our it clients</a></li>
+              <li><a class="main-sb-nav" href="#"><i class="fa-solid fa-angles-right"></i>our bespoke software clients</a></li>
+              <li><a class="main-sb-nav" href="#"><i class="fa-solid fa-angles-right"></i>our telecoms clients</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a class="main-sb-title" id="main-nav" href="#">
+            Our knowledge
+          </a>
+          <div class="inner-nav">
+            <ul>
+              <li><a class="main-sb-nav" href="#"><i class="fa-solid fa-angles-right"></i>technologies</a></li>
+              <li><a class="main-sb-nav" href="#"><i class="fa-solid fa-angles-right"></i>industries</a></li>
+              <li><a class="main-sb-nav" href="#"><i class="fa-solid fa-angles-right"></i>news</a></li>
+              <li><a class="main-sb-nav" href="#"><i class="fa-solid fa-angles-right"></i>insights</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a class="main-sb-title" id="main-nav" href="#">
+            training
+          </a>
+          <div class="inner-nav">
+            <ul>
+              <li><a class="main-sb-nav" href="#"><i class="fa-solid fa-angles-right"></i>train for a career in tech</a></li>
+              <li><a class="main-sb-nav" href="#"><i class="fa-solid fa-angles-right"></i>skills bootcamp</a></li>
+              <li><a class="main-sb-nav" href="#"><i class="fa-solid fa-angles-right"></i>scs frequently asked questions</a></li>
+              <li><a class="main-sb-nav" href="#"><i class="fa-solid fa-angles-right"></i>scion collaborators</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a class="main-sb-title" id="main-nav" href="#">
+            Our company
+          </a>
+          <div class="inner-nav">
+            <ul>
+              <li><a class="main-sb-nav" href="#"><i class="fa-solid fa-angles-right"></i>why choose us?</a></li>
+              <li><a class="main-sb-nav" href="#"><i class="fa-solid fa-angles-right"></i>our culture</a></li>
+              <li><a class="main-sb-nav" href="#"><i class="fa-solid fa-angles-right"></i>our team</a></li>
+              <li><a class="main-sb-nav" href="#"><i class="fa-solid fa-angles-right"></i>our careers</a></li>
+              <li><a class="main-sb-nav" href="#"><i class="fa-solid fa-angles-right"></i>our benefits</a></li>
+              <li><a class="main-sb-nav" href="#"><i class="fa-solid fa-angles-right"></i>our accreditations</a></li>
+              <li><a class="main-sb-nav" href="#"><i class="fa-solid fa-angles-right"></i>laptops 4 learning</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a class="main-sb-title" id="main-nav" href="#">
+            contact us
+          </a>
+          <div class="inner-nav">
+            <ul>
+              <li><a class="main-sb-nav" href="#"><i class="fa-solid fa-angles-right"></i>cambridge office</a></li>
+              <li><a class="main-sb-nav" href="#"><i class="fa-solid fa-angles-right"></i>wymondham office</a></li>
+              <li><a class="main-sb-nav" href="#"><i class="fa-solid fa-angles-right"></i>great yarmouth office</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
     </div>
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/animsition/jquery.animsition.min.js"></script>

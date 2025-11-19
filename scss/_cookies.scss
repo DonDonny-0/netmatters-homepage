@@ -1,0 +1,134 @@
+.cookies {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30px;
+  z-index: 100;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,.7);
+
+  .manage-consent {
+    position: fixed;
+    line-height: 22px;
+    z-index: 98;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    display: flex;
+    background: #75788a;
+    color: #fff;
+    border: solid #75788a;
+    border-width: 1px 1px 0 0;
+    border-radius: 0;
+    border-top-right-radius: 10px;
+    padding: 0 10px;
+    cursor: pointer;
+    font-size: .8rem;
+  }
+  .cookie-textbox {
+    margin: auto;
+
+    @media screen and (min-width: $bkpoint-sm) {
+      width: 600px;
+    }
+
+    .cookie-content {
+      //box-shadow: 0 5px 15px rgba(0,0,0,.5);
+      position: relative;
+      background-color: #fff;
+      border: 1px solid rgba(0,0,0,.2);
+      border-radius: 5px;
+
+      .cookie-title {
+        padding: 15px 20px;
+        margin: 0;
+        line-height: 1.4285;
+
+        h3 {
+          margin: 0;
+          font-weight: 400;
+          font-size: 1.625rem;
+          color: #333645;
+        }
+      }
+
+      .cookie-text {
+        border-top: 1px solid #e5e5e5;
+        padding: 20px;
+        position: relative;
+        a {
+          text-decoration: none; 
+          color: #333645;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        p {
+          margin-top: 0;
+          line-height: 1.875rem;
+          margin-bottom: 25px;
+        }
+      }
+
+      .cookie-buttons {
+        border-top: 1px solid #e5e5e5;
+        margin: 0;
+        justify-content: space-between;
+        padding: 19px 20px 20px;
+        div>a {
+          text-decoration: none;
+        }
+
+        .row {
+          //max-width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          margin-left: -15px;
+          margin-right: -15px;
+        }
+
+        .cookie-settings {
+          text-align: center;
+          padding: 0 15px;
+
+          a {
+            @include btn(#999aa2);
+            display: block;
+            width: 100%;
+            margin: 0;
+            line-height: 20px;
+          }
+
+          @media screen and (min-width: $bkpoint-sm) {
+            width: 50%;
+          }
+        }
+
+        .accept {
+          text-align: center;
+          padding: 0 15px;
+
+          a {
+            @include btn(#926fb1);
+            display: block;
+            width: 100%;
+            margin: 0;
+            line-height: 20px;
+          }
+          
+          @media screen and (min-width: $bkpoint-sm) {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
