@@ -99,6 +99,10 @@ footer {
         @media screen and (min-width: $bkpoint-lg) {
           margin-bottom: 0;
         }
+
+        @media screen and (max-width: 480px) {
+          width: 340px;
+        }
       }
     }
   }
