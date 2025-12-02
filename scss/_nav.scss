@@ -68,22 +68,22 @@
       }
       &:hover {
         &::before {
-          @media (min-width: $bkpoint-lg) {
-            transform: translateX(-50%) translateY(280%);
-          } 
+          @media screen and (max-width: $bkpoint-lg) {
+            transform: translateX(-50%) translateY(342%);
+          }
         }
       }
     }
 
     #it-nav {
       @include nav-submenu($it-color, #286abd);
-      &:hover {
-        &::before {
-          @media (min-width: $bkpoint-lg) {
-            transform: translateX(-50%) translateY(280%);
-          } 
-        }
-      }
+      // &:hover {
+      //   &::before {
+      //     @media (min-width: $bkpoint-lg) {
+      //       transform: translateX(-50%) translateY(280%);
+      //     } 
+      //   }
+      // }
     }
 
     #dm-nav {

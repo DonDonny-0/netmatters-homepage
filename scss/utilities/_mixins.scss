@@ -1,8 +1,5 @@
 @mixin btn($color) {
-  a {
-    color: unset;
-    text-decoration: unset;
-  }
+  text-decoration: none;
   cursor: pointer;
   padding: 12px 10px;
   margin: 5px 0;
@@ -23,13 +20,22 @@
   background-color: $color;
   font-size: 1.25rem;
 
-  a>i {
-    margin-left: 12px;
+  a {
+    color: white;
+    text-decoration: none;
+    i {
+      margin-left: 12px;
+    }
   }
+
   padding: 5px 20px;
   line-height: 50px;
   margin-top: 1.938rem;
   margin-bottom: 1.125rem;
+
+  @media screen and (max-width: $bkpoint-sm) {
+    padding: 5px 14px;
+  }
 }
 
 @mixin service-item($color) {
@@ -37,7 +43,7 @@
   flex-direction: column;
   box-shadow: 0 3px 35px rgba(0,0,0, .1);
   border: 1px solid rgba(0,0,0, .2);
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 30px;
   transition: background-color 0.5s, transform 0.5s;
   height: 100%;
@@ -163,15 +169,15 @@
     &::before {
       content: "";
       position: absolute;
-      border-width: 35px 66px 0;
+      border-width: 35px 70px 0;
       z-index: 2;
       border-style: solid;
       border-color: $color transparent transparent;
       transform: translateX(-50%) translateY(335%);
 
       @media (min-width: $bkpoint-lg) {
-        border-width: 35px 85px 0;
-        transform: translateX(-50%) translateY(280%);
+        border-width: 35px 86.5px 0;
+        transform: translateX(-50%) translateY(290%);
       } 
     }
 

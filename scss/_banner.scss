@@ -50,6 +50,12 @@
         z-index: 4;
         margin: 0 auto;
 
+        .container {
+          @media screen and (max-width: $bkpoint-md) {
+            width: auto;
+          }
+        }
+
         .learn-more-1 {
           @include banner-btn(#926FB1);
           &:hover {

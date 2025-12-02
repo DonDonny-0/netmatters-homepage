@@ -16,19 +16,33 @@
       height: 70px;
       width: 402px;
 
-      @media (max-width: $bkpoint-sm) {
-        flex-direction: column;
-        width: 50%;
+      @media screen and (max-width: $bkpoint-md) {
+        img {
+          max-width: 100%;
+        }
       }
 
-      img {
+      @media (max-width: $bkpoint-sm) {
         vertical-align: middle;
+        display: table;
         width: 100%;
-        z-index: 10;
 
-        @media (max-width: $bkpoint-sm) {
-          width: 260px;
-          height: 505x;
+        a {
+          display: table-cell;
+          vertical-align: middle;
+
+          img {
+            display: block;
+            max-width: 100%;
+
+            @media screen and (max-width: $bkpoint-md) {
+              width: 100%;
+            }
+
+            @media (max-width: $bkpoint-sm) {
+              width: 260px;
+            }
+          }
         }
       }
     }
@@ -94,30 +108,30 @@
         display: flex;
         margin-left: 20px;
 
-          #search-btn {
-            @include btn(#999AA2);
-            font-size: 1.063rem;
-            border-radius: 0 3px 3px 0;
-            padding: 7px 20px 3px; 
-            height: 56px;
-            vertical-align: bottom;
-            i {
-              font-size: 23px;
-            }
-
-            &:hover {
-              background-color: #7e808a;
-            }
-
-            @media (max-width: $bkpoint-lg) {
-              align-self: center;
-              border-radius: 3px;
-            }
-
-            @media (max-width: $bkpoint-md) {
-              border-radius: 0 3px 3px 0;
-            }
+        #search-btn {
+          @include btn(#999AA2);
+          font-size: 1.063rem;
+          border-radius: 0 3px 3px 0;
+          padding: 7px 20px 3px; 
+          height: 56px;
+          vertical-align: bottom;
+          i {
+            font-size: 23px;
           }
+
+          &:hover {
+            background-color: #7e808a;
+          }
+
+          @media (max-width: $bkpoint-lg) {
+            align-self: center;
+            border-radius: 3px;
+          }
+
+          @media (max-width: $bkpoint-md) {
+            border-radius: 0 3px 3px 0;
+          }
+        }
 
         #search-box {
           display: inline-block;
@@ -175,6 +189,7 @@
         @media (max-width: $bkpoint-sm) {
           float: right;
           border-radius: 3px;
+          margin-right: -8px;
         }
 
 
@@ -207,8 +222,12 @@
       }
 
       @media (max-width: $bkpoint-sm) {
-        display: inline;
+        //display: inline;
       }
+    }
+
+    @media (max-width: $bkpoint-sm) {
+      margin-bottom: 10px;
     }
   }
 
@@ -226,6 +245,10 @@
       border-radius: 2px;
       height: 47px;
 
+      &:focus {
+        outline: none;
+      }
+
     }
 
     #search-btn-sm {
@@ -237,7 +260,7 @@
 
       i {
         position: absolute;
-        top: 108px;
+        top: 118px;
         right: 25px;
         line-height: 10px;
         font-size: 20px;

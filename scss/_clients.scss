@@ -1,8 +1,7 @@
 .clients {
-  padding: 20px 0 0;
-  overflow-x: auto;
 
   .clients-row {
+    padding: 50px 0 0;
     display: block;
     text-wrap: nowrap;
 
@@ -21,15 +20,16 @@
       vertical-align: middle;
       width: auto;
 
-      .tooltip {
+      .description {
         display: none;
-        //position: absolute;
-        bottom: 100%;
+        position: absolute;
         right: -200px;
         left: -200px;
-        z-index: 5;
+        bottom: 100%;
 
-        .description {
+        .box {
+          text-wrap: wrap;
+          text-align: center;
           background-color: #333645;
           color: white;
           padding: 20px;
@@ -37,10 +37,29 @@
           max-width: 280px;
           margin: 0 auto 50px;
 
+          h3 {
+            position: relative;
+            font-size: 1.125rem;
+            color: #fff;
+            padding-bottom: 17px;
+            margin: 0;
+            font-weight: 400;
+          }
+
           p {
             font-size: .8125rem;
             line-height: 1.375rem;
             margin-bottom: 0;
+
+            a {
+              text-decoration: none;
+              color: white;
+              font-weight: 600;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
           }
 
           .client-btn {
@@ -49,16 +68,70 @@
             font-size: 1rem;
             display: flex;
 
+            &:hover {
+              background-color: #7e57a0;
+              border-color: #735093;
+            }
 
+            i {
+              margin-left: 5px;
+              margin-top: 3px;
+            }
+          }
+
+          #blk-swan {
+            background-color: #f7b322;
+            border: 1px solid #f7b322;
+
+            &:hover {
+              background-color: #e8a008;
+              border-color: #d49308;
+            }
+          }
+
+          #girl-guide {
+            background-color: #4183d7;
+            border: 1px solid #4183d7;
+
+            &:hover {
+              background-color: #2a6ec6;
+              border-color: #2665b5;
+            }
+          }
+
+          #gdst {
+            background-color: #2ecc71;
+            border-color: #2ecc71;
+
+            &:hover {
+              background-color: #26ab5f;
+              border-color: #26ab5f
+            }
+          }
+
+          .arrow {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            margin-left: -36px;
+
+            &::after {
+              content: "";
+              margin: auto;
+              display: inline-block;
+              border-color: #333645 transparent transparent;
+              border-style: solid;
+              border-width: 35px 36px 0;
+            }
           }
         }
       }
 
-      // &:hover {
-      //   .tooltip {
-      //     display: block;
-      //   }
-      // }
+      &:hover {
+        .description {
+          display: block;
+        }
+      }
     }
   }
 }

@@ -62,6 +62,16 @@ $(document).ready(function() {
     autoplaySpeed: 4000
   })
 
+  $('.client-carousel').slick({
+    dots: false,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    centerMode: true,
+    slidesToShow: 8,
+    slidesToScroll: 1
+  });
+
   var lastScrollTop = 0;
 
   window.addEventListener('scroll', () => {
