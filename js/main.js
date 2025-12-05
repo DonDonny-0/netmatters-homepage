@@ -13,8 +13,9 @@ $(document).ready(function() {
   }
 
   // jquery for expand and collapse the sidebar
-  $('#hamburger').on('click', function() {
+  $('.hamburger').on('click', function() {
     $('body').addClass('overflow-hidden');
+    $('.hamburger').addClass('is-active');
     $('#open-sidebar').css('visibility', 'visible')
 
     sidebarBreakpoint.addEventListener('change', sidebarListener);
@@ -35,6 +36,7 @@ $(document).ready(function() {
     $('#container').animate({left: '0'});
     $("#container").removeClass('active');
     $('body').removeClass('overflow-hidden');
+    $('.hamburger').removeClass('is-active');
   });
 
   let searchBtnClick = 0;
@@ -85,6 +87,8 @@ $(document).ready(function() {
     lastScrollTop = st <= 0 ? 0 : st;
   });
 
+  onscroll
+
 
   if (window.innerWidth < 1260 && window.innerWidth > 1025) {
     if ($('.slick-dots li:first-child').hasClass('slick-active')) {
@@ -114,14 +118,18 @@ let cookies = localStorage.getItem('cookiesConsent');
 
 if (cookies === null) {
   $('.cookies').css('display', 'flex');
+  $('body').addClass('overflow-hidden');
+  
 }
 else {
   $('.cookies').css('display', 'none');
+  $('body').removeClass('overflow-hidden');
 }
 
 function accept() {
   localStorage.setItem('cookiesConsent', 'accepted');
   $(".cookies").css('display', 'none');
+  $('body').removeClass('overflow-hidden');
 }
 
 function showCookiePopup() {
