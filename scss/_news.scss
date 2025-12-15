@@ -2,6 +2,10 @@
   @include view-link-bottom;
   margin-bottom: -50px;
 
+  .container {
+    padding-bottom: 50px;
+  }
+
   i {
     color: black;
     font-size: 1.5rem;

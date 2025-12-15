@@ -1,31 +1,49 @@
 .clients {
+  padding: 50px 0;
 
   .clients-row {
-    padding: 50px 0 0;
-    display: block;
+    display: inline;
     text-wrap: nowrap;
+    height: 200px;
 
-    .client {
-      margin: 40px;
-      filter: grayscale(1);
+    .slick-list {
+      overflow: visible;
     }
-
-    .client:hover {
-      filter: grayscale(0);
-    }
-
+    
     .item {
-      display: inline-block;
-      position: relative;
-      vertical-align: middle;
       width: auto;
+      margin-right: 50px;
+      filter: grayscale(1);
+
+      &:hover {
+        filter: grayscale(0);
+      }
+
+      .picture {
+        padding: 0 20px;
+        position: relative;
+        width: auto;
+        max-height: 70px;
+        height: 70px;
+        max-width: 240px;
+        display: flex;
+        align-items: center;
+
+        .client {
+          display: block;
+          max-width: 240px;
+          width: 100%;
+          max-height: 70px;
+        }
+      }
 
       .description {
+        z-index: 10;
         display: none;
         position: absolute;
         right: -200px;
         left: -200px;
-        bottom: 75%;
+        bottom: 100%;
 
         .box {
           text-wrap: wrap;

@@ -286,3 +286,19 @@
     // margin-bottom: -28px;
   }
 }
+
+.sticky {
+  display: block;
+  position: fixed;
+  top: -213px;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: 0 5px 35px rgba(0,0,0,.1);
+  animation-duration: .25s;
+  transition: all .5s;
+
+  header {
+    background-color: white;
+  }
+}
