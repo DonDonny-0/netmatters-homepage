@@ -158,7 +158,7 @@ $(document).ready(function() {
         $('.sticky').css('visibility', 'visible').stop(true).css('top', '0');
       }
       else {
-        $('.sticky').stop(true).css('top', '-213px');
+        $('.sticky').stop(true).css('top', '-250px');
       }
     }
     else {
