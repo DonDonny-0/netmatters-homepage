@@ -166,6 +166,7 @@ header>.header-bar {
       .hamburger {
         @include btn(#333645);
         padding: 5px 15px;
+        padding-right: 5px;
         border-radius: 3px;
         height: 56px;
         line-height: 46px;
