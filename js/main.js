@@ -94,6 +94,13 @@ $(document).ready(function() {
     autoplaySpeed: 4000
   })
 
+  // if ($('.low-dots').hasClass('slick-active')) {
+  //   $('.slick-dots').css('bottom', '20px');
+  // }
+  // else if ($('.high-dots').hasClass('slick-active')){
+  //   $('.slick-dots').css('bottom', '90px');
+  // }
+
   $('.clients-row').slick({
     dots: false,
     arrows: true,
