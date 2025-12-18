@@ -4,7 +4,7 @@
   z-index: 10;
 }
 
-.header-bar {
+header>.header-bar {
   padding: 20px 0;
   align-items: center;
 
@@ -57,7 +57,7 @@
       margin-left: 50px;
       align-items: center;
 
-      #support-btn {
+      #support-btn, #support-btn-stk {
         @include btn(#4183d7);
         padding: 5px 15px;        
         font-size: 1.15em;
@@ -80,7 +80,7 @@
         }
       }
 
-      #contact-btn {
+      #contact-btn, #contact-btn-stk {
         @include btn(#999AA2);
         padding: 5px 15px;        
         font-size: 1.15rem;
@@ -108,7 +108,7 @@
         display: flex;
         margin-left: 20px;
 
-        #search-btn {
+        #search-btn, #search-btn-stk {
           @include btn(#999AA2);
           font-size: 1.063rem;
           border-radius: 0 3px 3px 0;
@@ -133,7 +133,7 @@
           }
         }
 
-        #search-box {
+        #search-box, #search-box-stk {
           display: inline-block;
           margin: auto 0;
           font-size: 14px;
@@ -205,7 +205,7 @@
         }
       }
 
-      #contact-sm {
+      #contact-sm, #contact-sm-stk {
         border: none;
         background: none;
         cursor: pointer;
@@ -242,7 +242,7 @@
   .search-sm {
     width: 100%;
 
-    #search-box-sm {
+    #search-box-sm, #search-box-sm-stk {
       background-color: rgba(0, 0, 0, .1);
       box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
       width: 100%;
@@ -259,7 +259,7 @@
 
     }
 
-    #search-btn-sm {
+    #search-btn-sm, #search-btn-sm-stk {
       display: inline;
       border: none;
       background: none;

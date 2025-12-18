@@ -53,7 +53,7 @@
 
       #cd-service {
         @include service-item($c-and-d-color);
-        button {
+        span {
           background-color: #f7b322;
           border-color: #f7b322;
           border-radius: 3px;

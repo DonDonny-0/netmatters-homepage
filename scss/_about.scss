@@ -70,16 +70,13 @@
         font-weight: 600;
         font-size: 1.3rem;
       }
-
-      button {
-        margin-top: 25px;
-      }
     }
 
     #google-trust {
+      a {
+        margin-top: 25px;
+      }
       margin-top: 40px;
-      margin-right: 20px;
-
     }
 
     .fa-star {
@@ -94,31 +91,26 @@
   }
 
   .btn-layout {
-    margin-top: 20px;
-    display: block;
-    margin-right: 10px;
-  }
-
-  button {
-    @include btn(#272936);
-    border-radius: 6px;
-    margin-right: 10px;
-    padding: 10px 30px;
-    font-size: 20px;
 
     a {
+      @include btn(#272936);
+      display: inline-block;
+      height: auto;
+      border-radius: 6px;
+      margin: 5px 0;
+      padding: 10px 30px;
+      font-size: 20px;
       color: white;
       text-decoration: none;
-    }
-    
 
-    &:first-child {
-      margin-bottom: 15px;
-    }
+      &:first-child {
+        margin-bottom: 15px;
+      }
 
-    &:hover {
-      background-color: #121318;
-      border-color: #121318;
+      &:hover {
+        background-color: #121318;
+        border-color: #121318;
+      }
     }
   }
 
@@ -142,6 +134,7 @@
     padding: 10px 30px;
     font-size: 20px;
     margin-top: 20px;
+    max-width: fit-content;
     
 
     &:hover {
@@ -152,12 +145,6 @@
     @media screen and (max-width: $bkpoint-sm) {
       margin-top: 15px;
     }
-  }
-
-  .arrow {
-    height: 20px;
-    display: inline-block;
-    margin-left: 8px;
   }
 
   @media (max-width: $bkpoint-sm) {
