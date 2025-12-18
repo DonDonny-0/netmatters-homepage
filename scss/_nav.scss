@@ -77,13 +77,6 @@
 
     #it-nav {
       @include nav-submenu($it-color, #286abd);
-      // &:hover {
-      //   &::before {
-      //     @media (min-width: $bkpoint-lg) {
-      //       transform: translateX(-50%) translateY(280%);
-      //     } 
-      //   }
-      // }
     }
 
     #dm-nav {
