@@ -1,11 +1,12 @@
 body {
   margin: 0;
   height: 100%;
+  max-width: 100%;
   letter-spacing: .4px;
   color: #666;
 
   &.overflow-hidden {
-    overflow: hidden;
+    overflow: scroll;
   }
 
   #open-sidebar {
@@ -18,7 +19,6 @@ body {
   }
 
   #container {
-    overflow: hidden;
     background-color: #fff;
     position: relative;
     z-index: 10;

@@ -94,35 +94,45 @@ $(document).ready(function() {
     autoplaySpeed: 4000
   })
 
-  $('.clients-row').slick({
-    dots: false,
-    arrows: true,
+  // $('.clients-row').slick({
+  //   dots: false,
+  //   arrows: false,
+  //   autoplay: true,
+  //   autoplaySpeed: 3000,
+  //   variableWidth: true,
+  //   slidesToShow: 8,
+  //   slidesToScroll: 1,
+  //   responsive: [
+  //     {
+  //       breakpoint: 1260,
+  //       settings: {
+  //         slidesToShow: 4,
+  //         slidesToScroll: 1
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 767,
+  //       settings: {
+  //         slidesToShow: 2,
+  //         slidesToScroll: 1
+  //       }
+  //     }
+  //   ]
+  // });
+
+  $('.owl-carousel').owlCarousel({
+    items: 8,
+    loop: true,
     autoplay: true,
-    autoplaySpeed: 3000,
-    variableWidth: true,
-    slidesToShow: 8,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1260,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      }
-    ]
+    loop: true,
+    autoplayTimeout: 3000,
+    autoWidth: true,
+    mergeFit: true
   });
 
   $('.partners-row').slick({
     dots: false,
-    arrows: true,
+    arrows: false,
     autoplay: true,
     autoplaySpeed: 3000,
     variableWidth: true,

@@ -1,6 +1,6 @@
 .news {
   @include view-link-bottom;
-  margin-bottom: -50px;
+  margin-bottom: -300px;
 
   .container {
     padding-bottom: 50px;
@@ -40,6 +40,10 @@
     width: 100%;
     height: 100%;
     border-radius: 0 0 3px 3px;
+
+    .article {
+      z-index: 1;
+    }
 
     .article>.article-details>.author>.posted-by>strong {
       color: #333645;

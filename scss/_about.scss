@@ -64,6 +64,12 @@
       }
     }
 
+    .about-section-1 .btn-layout {
+      #culture {
+        margin-left: 8px
+      }
+    }
+
     .about-section-2 {
 
       div>p {
@@ -76,7 +82,12 @@
       a {
         margin-top: 25px;
       }
-      margin-top: 40px;
+      margin-top: 55px;
+
+      @media (max-width: $bkpoint-md) {
+        margin-top: -20px;
+        margin-bottom: 20px;
+      }
     }
 
     .fa-star {
