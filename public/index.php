@@ -3,6 +3,12 @@
 // session_start();
 
 use \Core\Router;
+use Dotenv\Dotenv;
+
+require_once realpath(__DIR__ . "/vendor/autoload.php");
+
+$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv->load();
 
 const BASE_PATH = __DIR__.'/../';
 
