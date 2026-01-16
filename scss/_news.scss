@@ -1,6 +1,5 @@
 .news {
   @include view-link-bottom;
-  margin-bottom: -300px;
 
   .container {
     padding-bottom: 50px;
@@ -102,6 +101,10 @@
         font-weight: 600;
       }
 
+      .posted-by {
+        width: 250px;
+      }
+
 
       .read-more {
         @include btn($it-color);
@@ -150,6 +153,7 @@
         font-weight: 600;
         font-size: 1rem;
         margin-top: 0;
+        height: 48px;
       }
 
       p {

@@ -1,15 +1,15 @@
 .partners {
   padding: 50px 0;
 
-  .slick-slider {
-    margin-bottom: 0;
-    width: 100%;
-  }
-
   .partners-row {
-    display: block;
-    text-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
     align-items: center;
+    justify-content: center;
+    min-width: 0;
+    overflow-x: clip;
 
     .partner-item {
       width: auto;

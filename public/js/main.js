@@ -3,6 +3,11 @@ $(document).ready(function() {
   let sidebarBreakpoint = window.matchMedia("(max-width: 992px)");
   const sidebarListener = () => adjustSidebar(sidebarBreakpoint);
 
+  $('.dropdown-answers').click(function() {
+    $(this).next('.answers').slideToggle();
+    $(this).find('.dropdown').toggleClass('rotate');
+  })
+
   function adjustSidebar() {
     if (sidebarBreakpoint.matches) {
       $('#container').css('left', '-275px');
@@ -94,40 +99,30 @@ $(document).ready(function() {
     autoplaySpeed: 4000
   })
 
-  // $('.clients-row').slick({
-  //   dots: false,
-  //   arrows: false,
-  //   autoplay: true,
-  //   autoplaySpeed: 3000,
-  //   variableWidth: true,
-  //   slidesToShow: 8,
-  //   slidesToScroll: 1,
-  //   responsive: [
-  //     {
-  //       breakpoint: 1260,
-  //       settings: {
-  //         slidesToShow: 4,
-  //         slidesToScroll: 1
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 767,
-  //       settings: {
-  //         slidesToShow: 2,
-  //         slidesToScroll: 1
-  //       }
-  //     }
-  //   ]
-  // });
-
-  $('.owl-carousel').owlCarousel({
-    items: 8,
-    loop: true,
+  $('.clients-row').slick({
+    dots: false,
+    arrows: false,
     autoplay: true,
-    loop: true,
-    autoplayTimeout: 3000,
-    autoWidth: true,
-    mergeFit: true
+    autoplaySpeed: 3000,
+    variableWidth: true,
+    slidesToShow: 8,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1260,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      }
+    ]
   });
 
   $('.partners-row').slick({
@@ -155,56 +150,6 @@ $(document).ready(function() {
       }
     ]
   });
-
-  // const updateSlickDots = (slick, currentSlide = slick.currentSlide) => {
-  //   const width = window.innerWidth;
-
-  //   if (width < 1260 && width > 992) {
-  //     if (currentSlide === 0) {
-  //       // First (large) banner
-  //       $('.slick-dots').stop(true).animate({ bottom: 100 }, 200);
-  //     } else {
-  //       // Smaller banners
-  //       $('.slick-dots').stop(true).animate({ bottom: 20 }, 200);
-  //     }
-  //   } else {
-  //     // Outside breakpoint range
-  //     $('.slick-dots').stop(true).animate({ bottom: 20 }, 200);
-  //   }
-  // };
-
-  // window.addEventListener('resize', () => {
-  //   handleSlickDots();
-  // })
-
-  // $('.banner-carousel')
-  // .on('init', function (slick) {
-  //   updateSlickDots(slick);
-  // })
-  // .on('afterChange', function (slick, currentSlide) {
-  //   updateSlickDots(slick, currentSlide);
-  // })
-  // .on('setPosition', function (slick) {
-  //   updateSlickDots(slick);
-  // });
-
-  const bannerSlider = document.querySelector('.slick-track');
-
-  const handleSlickDots = () => {
-    if (window.innerWidth < 1260 && window.innerWidth > 992) {
-      if ($('.slick-track .banner-item:nth-child(2)').hasClass('slick-active'))  {
-        $('.slick-dots').animate({bottom: 20});
-      }
-      else {
-        $('.slick-dots').animate({bottom: 100});
-      }
-    }
-    else {
-      $('.slick-dots').animate({bottom: 20});
-    }
-  }
-
-  bannerSlider.addEventListener('transitionstart', handleSlickDots);
 
   window.addEventListener('resize', () => {
     if (window.innerWidth > 1260 && window.innerWidth < 992) {
@@ -236,6 +181,24 @@ $(document).ready(function() {
     lastScrollPos = currentScrollPos;
   }
 
+  const bannerSlider = document.querySelector('.slick-track');
+
+  const handleSlickDots = () => {
+    if (window.innerWidth < 1260 && window.innerWidth > 992) {
+      if ($('.slick-track .banner-item:nth-child(2)').hasClass('slick-active'))  {
+        $('.slick-dots').animate({bottom: 20});
+      }
+      else {
+        $('.slick-dots').animate({bottom: 100});
+      }
+    }
+    else {
+      $('.slick-dots').animate({bottom: 20});
+    }
+  }
+
+  bannerSlider.addEventListener('transitionstart', handleSlickDots);
+
 });
 
 
@@ -261,3 +224,84 @@ function showCookiePopup() {
   $(".cookies").css('display', 'flex');
 }
 
+const form = document.getElementById('form');
+const Name = document.getElementById('name');
+const email = document.getElementById('email');
+const phone = document.getElementById('phone');
+const message = document.getElementById('message');
+const success = document.querySelector('.success');
+
+form.addEventListener('submit', e => {
+  if (!validateInputs()) {
+    e.preventDefault();
+  };
+});
+
+const setError = (element) => {
+  element.classList.add('error');
+  element.classList.remove('success')
+}
+
+
+const setSuccess = element => {
+  element.classList.add('success');
+  element.classList.remove('error');
+};
+
+const isValidEmail = email => {
+  const re = new RegExp("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$");
+  return re.test(String(email).toLowerCase());
+}
+
+
+const showError = (element) => {
+  if (element.validity.valueMissing) {
+    // If empty
+    emailError.textContent = "";
+  } else if (email.validity.tooShort) {
+    // If the value is too short,
+    emailError.textContent = `Email should be at least ${email.minLength} characters; you entered ${email.value.length}.`;
+  }
+}
+
+const validateInputs = () => {
+  const NameVal = Name.value.trim();
+  const emailVal = email.value.trim();
+  const phoneVal = phone.value.trim();
+  const messageVal = email.value.trim();
+
+  var passed = true;
+
+  if (NameVal === '') {
+    setError(Name);
+    passed = false;
+  } else {
+    setSuccess(Name);
+  }
+
+  if (phoneVal === '') {
+    setError(phone);
+    passed = false;
+  } else {
+    setSuccess(phone);
+  }
+
+  if (messageVal === '') {
+    setError(message);
+    passed = false;
+  } else {
+    setSuccess(message);
+  }
+
+  if (emailVal === '') {
+    setError(email);
+    passed = false;
+  } else if (!isValidEmail(emailVal)) {
+    setError(email);
+    passed = false;
+  } else {
+    setSuccess(email);
+  }
+
+  return passed;
+}

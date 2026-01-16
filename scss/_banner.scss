@@ -3,6 +3,8 @@
   transition: height 0.5s;
 
   .banner-carousel {
+    min-width: 0;
+    overflow-x: clip;
 
     .banner-item {
       position: relative;

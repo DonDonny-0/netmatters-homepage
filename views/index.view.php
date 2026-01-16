@@ -21,11 +21,11 @@
         <div class="container">
           <div class="service-header clearfix">
             <h2>Our Services</h2>
-            <h1><a href="#">View Our Work<em class="fa-solid fa-arrow-right"></em></a></h1>
+            <h1><a href="/">View Our Work<em class="fa-solid fa-arrow-right"></em></a></h1>
           </div>
           <div class="service-grid">
             <div class="service-grid-1">
-              <a href="#">
+              <a href="/">
                 <div id="cd-service">
                   <span class="icon">
                     <i class="fa-solid fa-user-gear"></i>
@@ -35,7 +35,7 @@
                   <div>Read More</div>
                 </div>
               </a>
-              <a href="#">
+              <a href="/">
                 <div id="it-service">
                   <span class="icon">
                     <i class="fa-solid fa-display"></i>
@@ -45,7 +45,7 @@
                   <div>Read More</div>
                 </div>
               </a>
-              <a href="#">
+              <a href="/">
                 <div id="dm-service">
                   <span class="icon">
                     <i class="fa-solid fa-chart-simple"></i>
@@ -57,7 +57,7 @@
               </a>
             </div>
             <div class="service-grid-2">
-              <a href="#">
+              <a href="/">
                 <div id="ts-service">
                   <span class="icon">
                     <i class="fa-solid fa-phone-volume"></i>
@@ -67,7 +67,7 @@
                   <div id="telecoms">Read More</div>
                 </div>
               </a>
-              <a href="#">
+              <a href="/">
                 <div id="wd-service">
                   <span class="icon">
                     <i class="fa-solid fa-code"></i>
@@ -77,7 +77,7 @@
                   <div id="web-dev">Read More</div>
                 </div>
               </a>
-              <a href="#">
+              <a href="/">
                 <div id="cs-service">
                   <span class="icon">
                     <i class="fa-solid fa-shield-halved"></i>
@@ -87,7 +87,7 @@
                   <div id="cyber-sec">Read More</div>
                 </div>
               </a>
-              <a href="#">
+              <a href="/">
                 <div id="dev-service">
                   <span class="icon">
                     <i class="fa-solid fa-graduation-cap"></i>
@@ -99,7 +99,7 @@
               </a>
             </div>
           </div>
-          <h1><a href="#">View Our Work<i class="fa-solid fa-arrow-right"></i></a></h1>
+          <h1><a href="/">View Our Work<i class="fa-solid fa-arrow-right"></i></a></h1>
         </div>
       </div>
       <div class="partners">
@@ -177,8 +177,8 @@
                 <p>We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.</p>
               </div>
               <div class="btn-layout">
-                <a id="choose-us" href="#">Why Choose us?<i class="fa-solid fa-arrow-right"></i></a>
-                <a id="culture" href="#">Our Culture<i class="fa-solid fa-arrow-right"></i></a>
+                <a id="choose-us" href="/">Why Choose us?<i class="fa-solid fa-arrow-right"></i></a>
+                <a id="culture" href="/">Our Culture<i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>
             <div class="about-section-2 content">
@@ -192,11 +192,11 @@
                   <i class="fa-solid fa-star"></i>
                 </div>
                 <p><em>Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!</em></p>
-                <p id="quote">Eleanor bishop, Head of Marketing - <a href="#">Ashcroft Partnership LLP</a></p>
+                <p id="quote">Eleanor bishop, Head of Marketing - <a href="/">Ashcroft Partnership LLP</a></p>
               </div>
               <div id="google-trust" class="btn-layout">
-                <a href="#" id="g-reviews">Google Reviews<i class="fa-solid fa-arrow-right"></i></a>
-                <a href="#" id="t-reviews">Trustpilot Reviews<i class="fa-solid fa-arrow-right"></i></a>
+                <a href="/" id="g-reviews">Google Reviews<i class="fa-solid fa-arrow-right"></i></a>
+                <a href="/" id="t-reviews">Trustpilot Reviews<i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>       
           </div>
@@ -206,68 +206,34 @@
         <div class="container">
           <div class="news-head">
             <h2>Latest News</h2>
-            <h1><a href="#">View All</a><i class="fa-solid fa-arrow-right"></i></h1>
+            <h1><a href="/">View All</a><i class="fa-solid fa-arrow-right"></i></h1>
           </div>
           <div class="articles">
-              <div class="article">
-                <a class="article-link" href="#"></a>
+
+            <?php foreach ($articles as $article) : ?>
+              <div class="article" id="<?= $article['class'] ?>">
+                <a class="article-link" href="/"></a>
                 <div class="img-container">
-                  <a href="#" class="category">Insights</a>
-                  <img src="img/news-pics/how-much-could-vKZG.webp" alt="Bespoke Software">
+                  <a href="/" class="category"><?= $article['category'] ?></a>
+                  <img src="<?= $article['image'] ?>" alt="Bespoke Software">
                 </div>
                 <div class="article-details">
-                  <h3>How much could beskoke software add to your E...</h3>
-                  <p>If you’re a Managing Director or Senior Manager preparing your business for exit, you know that incr...</p>
+                  <h3><?= $article['header'] ?></h3>
+                  <p><?= $article['body'] ?></p>
                   <div class="read-more">Read More</div>
                   <div class="author">
-                    <img src="img/news-pics/netmatters-ltd-VXAv.webp" alt="netmatters-logo">
+                    <img src="<?= $article['author_img'] ?>" alt="netmatters-logo">
                     <div class="posted-by">
-                      <strong>Posted By Netmatters</strong><br>
-                      27th June 2025
+                      <strong>Posted By <?= $article['author'] ?></strong><br>
+                      <?= $article['published'] ?>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="article">
-                <a class="article-link" href="#"></a>
-                <div class="img-container">
-                  <a href="#" class="category">Insights</a>
-                  <img src="img/news-pics/how-can-ai-L9M0.webp" alt="AI integration for Businesses">
-                </div>
-                <div class="article-details">
-                  <h3 style="height: 29px;">How can AI benefit my business?</h3><br>
-                  <p>The idea of integrating AI into your business operations may seem daunting, but there are undeniable...</p>
-                  <div class="read-more">Read More</div>
-                  <div class="author">
-                    <img src="img/news-pics/netmatters-ltd-VXAv.webp" alt="netmatters-logo">
-                    <div class="posted-by">
-                      <strong>Posted by Netmatters</strong><br>
-                      26th June 2025
-                    </div>
-                  </div>
-                </div>
-              </div>
-            <div id="article-3" class="article">
-              <a class="article-link" href="#"></a>
-              <div class="img-container">
-                <a href="#" class="category">careers</a>
-                <img src="img/news-pics/1st-line-technician-1QNr.png" alt="We are Hiring 1st Line Technician">
-              </div>
-              <div class="article-details">
-                <h3>1st Line Technician</h3><br>
-                <p>Salary Range £25,000 -£29,000 + Pension Hours 40 hours per week, Monday - Friday Location Wymondham,...</p>
-                <div class="read-more">Read More</div>
-                <div class="author">
-                  <img src="img/news-pics/bethany-shakespeare-F6Iu.webp" alt="netmatters-logo">
-                  <div class="posted-by">
-                    <strong id="author">Posted by Bethany Shakespeare</strong><br>
-                    20th June 2025
-                  </div>
-                </div>
-              </div>
-            </div>
+            <?php endforeach; ?>
+
           </div>
-          <h1><a href="#">View All</a><i class="fa-solid fa-arrow-right"></i></h1>
+          <h1><a href="/">View All</a><i class="fa-solid fa-arrow-right"></i></h1>
         </div>
       </div>
       <div class="clients">
@@ -284,7 +250,7 @@
                   are one of the top chartered accountancy firms in Cambridge, advising entrepreneurs and
                   families.
                 </p>
-                <a id="ashcroft" href="#" class="client-btn">
+                <a id="ashcroft" href="/" class="client-btn">
                   View Our Case Study<i class="fa-solid fa-arrow-right"></i>
                 </a>
                 <div class="arrow"></div>
@@ -314,7 +280,7 @@
                   Black Swan Care Group own and manage 21 high-quality care and residential homes with a focus on
                   putting the needs of their residents first.
                 </p>
-                <a id="blk-swan" class="client-btn" href="#">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
+                <a id="blk-swan" class="client-btn" href="/">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
                 <div class="arrow"></div>
               </div>
             </div>
@@ -359,7 +325,7 @@
                   Girl Guiding Anglia is part of Girlguiding, the UK's leading charity for girls and young women in
                   the UK.
                 </p>
-                <a id="girl-guide" class="client-btn" href="#">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
+                <a id="girl-guide" class="client-btn" href="/">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
                 <div class="arrow"></div>
               </div>
             </div>
@@ -372,9 +338,9 @@
               <div class="box">
                 <h3>GDST</h3>
                 <p id="gdst-p"> 
-                  The <a href="#">Girls' Day School Trust (GDST)</a> is the UK's leading family of 25 independent girls' schools.
+                  The <a href="/">Girls' Day School Trust (GDST)</a> is the UK's leading family of 25 independent girls' schools.
                 </p>
-                <a id="gdst" class="client-btn" href="#">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
+                <a id="gdst" class="client-btn" href="/">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
                 <div class="arrow"></div>
               </div>
             </div>
@@ -403,7 +369,7 @@
                 <p> 
                   Originally founded in 2006 as Ashcroft Anthony, they became Ashcroft Partnership LLP in 2020 and are one of the top chartered accountancy firms in Cambridge, advising entrepreneurs and families.
                 </p>
-                <a class="client-btn" href="#">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
+                <a class="client-btn" href="/">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
                 <div class="arrow"></div>
               </div>
             </div>
@@ -418,7 +384,7 @@
                 <p> 
                   Originally founded in 2006 as Ashcroft Anthony, they became Ashcroft Partnership LLP in 2020 and are one of the top chartered accountancy firms in Cambridge, advising entrepreneurs and families.
                 </p>
-                <a class="client-btn" href="#">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
+                <a class="client-btn" href="/">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
                 <div class="arrow"></div>
               </div>
             </div>
@@ -447,7 +413,7 @@
                 <p> 
                   Originally founded in 2006 as Ashcroft Anthony, they became Ashcroft Partnership LLP in 2020 and are one of the top chartered accountancy firms in Cambridge, advising entrepreneurs and families.
                 </p>
-                <a class="client-btn" href="#">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
+                <a class="client-btn" href="/">View Our Case Study<i class="fa-solid fa-arrow-right"></i></a>
                 <div class="arrow"></div>
               </div>
             </div>
@@ -474,13 +440,12 @@
 
   <!-- Footer Here -->
   <?php require('partials/footer.php') ?>
-
-</div>
-
+  
 
   <!-- Sticky Header Here -->
   <?php require('partials/sticky.php') ?>
 
+</div>
 
   <!-- Sidebar Here -->
   <?php require('partials/sidebar.php') ?>
