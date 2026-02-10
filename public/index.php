@@ -1,7 +1,5 @@
 <?php
 
-// session_start();
-
 use \Core\Router;
 use Dotenv\Dotenv;
 

@@ -13,26 +13,29 @@
   </div>
   <div id="open-sidebar">
   </div>
-  <div class="body">
-    <div class="breadcrumb-container">
+  <div class="breadcrumb-container">
+    <div class="container">
+      <ul class="breadcrumb">
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          Our Offices
+        </li>
+      </ul>
+    </div>
+    <div class="sm-office-title">
+      <h1>Our Offices</h1>
+    </div>
+  </div>      
+  <div class="top">
+    <div class="page-head">
       <div class="container">
-        <ul class="breadcrumb">
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            Our Offices
-          </li>
-        </ul>
-      </div>
-    </div>      
-    <div class="top">
-      <div class="page-head">
-        <div class="container">
-          <h1>Our Offices</h1>
-        </div>
+        <h1>Our Offices</h1>
       </div>
     </div>
+  </div>
+  <div class="body">
     <div class="offices">
       <div class="office-list container">
         <div class="office-row">

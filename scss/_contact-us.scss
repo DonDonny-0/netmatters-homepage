@@ -1,43 +1,70 @@
+
+
 .breadcrumb-container {
-  box-shadow: 0 5px 35px rgba(0,0,0,.1);
-  padding: 14px 0 13px;
+  display: none;
 
-  .breadcrumb {
-    background: none;
-    color: #333645;
-    font-size: .8125rem;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    border-radius: 2px;
+  @media screen and (min-width: $bkpoint-sm) {
+    display: block;
+    box-shadow: 0 5px 35px rgba(0,0,0,.1);
+    padding: 14px 0 13px;
 
-    a {
+    .breadcrumb {
+      background: none;
       color: #333645;
-      font-weight: 700;
-      text-decoration: none;
-    }
+      font-size: .8125rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      border-radius: 2px;
 
-    li {
-      display: inline-block;
-
-      &:last-child::before {
-        content: "/\A0";
-        padding: 0 5px;
+      a {
         color: #333645;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      li {
+        display: inline-block;
+
+        &:last-child::before {
+          content: "/\A0";
+          padding: 0 5px;
+          color: #333645;
+        }
       }
     }
   }
 }
 
-.top {
-  padding-top: 50px;
+.sm-office-title {
+  padding: 24px 0;
+  background-color: $heading-color;
+  h1 {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.1;
+    font-size: 2.25rem;
+  }
+}
 
-  .page-head {
-    h1 {
-      font-size: 2.25rem;
-      font-weight: 400;
-      margin: 0 0 28px;
-      color: #333645;
+
+.top {
+  display: none;
+
+  @media screen and (min-width: $bkpoint-md) {
+    display: block;
+    padding-top: 50px;
+
+    .page-head {
+      h1 {
+        font-size: 2.25rem;
+        font-weight: 400;
+        margin: 0 0 28px;
+        color: #333645;
+      }
     }
   }
 }
@@ -48,12 +75,27 @@
   .office-list {
 
     .office-row {
-      display: flex;
-      flex-direction: row;
+        display: flex;
+        flex-direction: column;
 
-      .office {
-        padding-left: 15px;
-        padding-right: 15px;
+        @media screen and (min-width: $bkpoint-sm) {
+          .office {
+            padding-left: 15px;
+            padding-right: 15px;
+          } 
+        }
+      }
+
+
+    @media screen and (min-width: $bkpoint-md) {
+      .office-row {
+        display: flex;
+        flex-direction: row;
+
+        .office {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
       }
     }
   }
